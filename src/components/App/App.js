@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 
 import './App.css';
 
+import AppHeader from "../AppHeader/AppHeader";
+import AboutUs from "../AboutUs";
+
 export default class App extends Component {
 
     constructor(props) {
@@ -20,32 +23,11 @@ export default class App extends Component {
     }
 
     render() {
-
-        const {navListItems} = this.state;
-
-        const items = navListItems.map(it => {
-            return (
-                <NavListItem key={it.key} item={it}/>
-            )
-        });
-
         return (
-            <div className="App">
-                <header className="App-header">
-                    <div className="App-nav">
-                        {items}
-                    </div>
-                </header>
+            <div className="app">
+                <AppHeader />
+                <AboutUs />
             </div>
-        );
+        )
     }
-}
-
-function NavListItem({item}) {
-    const {label, target} = item;
-    return (
-        <span>
-            <a href={target}>{label}</a>
-        </span>
-    )
 }

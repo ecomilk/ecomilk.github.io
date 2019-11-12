@@ -1,0 +1,13 @@
+.button {
+    border: none;
+    background: #FFDD1F;
+    color: #373737;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    height: 50px;
+    width: 20vw;
+}
+
+.button:hover {
+
+}
