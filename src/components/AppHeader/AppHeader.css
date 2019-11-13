@@ -13,7 +13,31 @@
 }
 
 .app-header h1.tinos {
-    font-size: 86px;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    font-size: 96px;
+    line-height: .9;
+}
+
+.navbar-nav > li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar-nav > li > a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.app-header .header-paragraph {
+    margin-top: 10px;
+}
+.app-header .button {
+    margin-top: 36px;
+}
+
+.app-header .header-paragraph p {
+    font-size: 18px;
 }
 
 /*.navbar.transparent.navbar-inverse .navbar-inner {*/

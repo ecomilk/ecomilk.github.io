@@ -4,6 +4,7 @@ import './App.css';
 
 import AppHeader from "../AppHeader/AppHeader";
 import AboutUs from "../AboutUs";
+import Products from "../Products/Products";
 
 export default class App extends Component {
 
@@ -27,6 +28,7 @@ export default class App extends Component {
             <div className="app">
                 <AppHeader />
                 <AboutUs />
+                <Products />
             </div>
         )
     }

@@ -2,12 +2,9 @@ import React, {Component} from 'react'
 
 import './AppHeader.css'
 import Button from "../Button";
+import Line from "../Line";
 
 export default class AppHeader extends Component {
-
-    getNavItems = () => {
-
-    };
 
     onClick = (event) => {
         console.log(event.target)
@@ -19,27 +16,69 @@ export default class AppHeader extends Component {
 
                 <NavBar/>
 
-                <h1 className="tinos bold">
-                    Малочны <br/> маёнтак
-                </h1>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-1">
 
-                <Line
-                    color={'#FFDD1F'}
-                    width={'20vw'}
-                    x1={0}
-                    x2={'20vw'}
-                />
+                        </div>
+                        <div className="col-10">
+                            <h1 className="tinos bold">
+                                Малочны <br/> маёнтак
+                            </h1>
+                        </div>
+                        <div className="col-1">
 
-                <div>
-                    <p>
-                        Фермерские продукты для всей семьи
-                    </p>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-1">
+
+                        </div>
+                        <div className="col-10">
+                            <Line
+                                color={'#FFDD1F'}
+                                width={'20vw'}
+                                x1={0}
+                                x2={'20vw'}
+                            />
+                        </div>
+                        <div className="col-1">
+
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-1">
+
+                        </div>
+                        <div className="col-10">
+                            <div className="header-paragraph">
+                                <p>
+                                    Фермерские продукты для всей семьи
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-1">
+
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-1">
+
+                        </div>
+                        <div className="col-10">
+                            <Button
+                                label="Вся продукция"
+                                onClick={this.onClick}
+                            />
+                        </div>
+                        <div className="col-1">
+
+                        </div>
+                    </div>
                 </div>
-
-                <Button
-                    label="Вся продукция"
-                    onClick={this.onClick}
-                />
 
             </header>
         )
@@ -64,16 +103,27 @@ const NavBar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg ">
-            <a className="navbar-brand" href="#header">Navbar</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"/>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
-                    {navItems}
-                </ul>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-1">
+
+                        </div>
+                        <div className="col-2">
+                            <a className="navbar-brand" href="#header">LOGO</a>
+                        </div>
+                        <div className="col-8">
+                            <ul className="navbar-nav">
+                                {navItems}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     )
@@ -84,20 +134,5 @@ const NavItem = ({label, target='#'}) => {
         <li className="nav-item">
             <a className="nav-link" href={target}>{label}</a>
         </li>
-    )
-};
-
-const Line = ({color, width, height = 4, x1, x2, y1 = 0, y2 = 0}) => {
-    const style = {
-        stroke: color,
-        strokeWidth: 4
-    };
-
-    return (
-        <div>
-            <svg height={height} width={width}>
-                <line x1={x1} y1={y1} x2={x2} y2={y2} style={style} />
-            </svg>
-        </div>
     )
 };
