@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/cheeser/static/css/main.523d6843.chunk.css",
-    "main.js": "/cheeser/static/js/main.2372b2d7.chunk.js",
-    "main.js.map": "/cheeser/static/js/main.2372b2d7.chunk.js.map",
+    "main.css": "/cheeser/static/css/main.7d0cab15.chunk.css",
+    "main.js": "/cheeser/static/js/main.63a258d8.chunk.js",
+    "main.js.map": "/cheeser/static/js/main.63a258d8.chunk.js.map",
     "runtime-main.js": "/cheeser/static/js/runtime-main.57a6fa88.js",
     "runtime-main.js.map": "/cheeser/static/js/runtime-main.57a6fa88.js.map",
     "static/js/2.28d2bef2.chunk.js": "/cheeser/static/js/2.28d2bef2.chunk.js",
     "static/js/2.28d2bef2.chunk.js.map": "/cheeser/static/js/2.28d2bef2.chunk.js.map",
     "index.html": "/cheeser/index.html",
-    "precache-manifest.77d520a8a8d1121a140d18b7b5736535.js": "/cheeser/precache-manifest.77d520a8a8d1121a140d18b7b5736535.js",
+    "precache-manifest.4a969adddc953bc9d6b5166c863de671.js": "/cheeser/precache-manifest.4a969adddc953bc9d6b5166c863de671.js",
     "service-worker.js": "/cheeser/service-worker.js",
-    "static/css/main.523d6843.chunk.css.map": "/cheeser/static/css/main.523d6843.chunk.css.map",
+    "static/css/main.7d0cab15.chunk.css.map": "/cheeser/static/css/main.7d0cab15.chunk.css.map",
+    "static/media/AboutUs.css": "/cheeser/static/media/about-us.86073947.png",
     "static/media/AppHeader.css": "/cheeser/static/media/header-photo.c7ea3fdb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.57a6fa88.js",
     "static/js/2.28d2bef2.chunk.js",
-    "static/css/main.523d6843.chunk.css",
-    "static/js/main.2372b2d7.chunk.js"
+    "static/css/main.7d0cab15.chunk.css",
+    "static/js/main.63a258d8.chunk.js"
   ]
 }
