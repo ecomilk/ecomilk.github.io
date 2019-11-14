@@ -7,7 +7,7 @@ import Button from "../Button";
 export default class Products extends Component {
     render() {
         return (
-            <div className="products">
+            <div className="products" id="products">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-1">

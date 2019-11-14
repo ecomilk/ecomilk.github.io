@@ -6,7 +6,7 @@ import Line from "../Line";
 export default class AboutUs extends Component {
     render() {
         return (
-            <div className="about-us">
+            <div className="about-us" id="about-us">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-1">
