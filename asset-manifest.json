@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cheeser/static/css/main.25dca4fe.chunk.css",
+    "main.css": "/cheeser/static/css/main.229923ba.chunk.css",
     "main.js": "/cheeser/static/js/main.b5e0b972.chunk.js",
     "main.js.map": "/cheeser/static/js/main.b5e0b972.chunk.js.map",
     "runtime-main.js": "/cheeser/static/js/runtime-main.57a6fa88.js",
@@ -8,16 +8,16 @@
     "static/js/2.96e6ce4f.chunk.js": "/cheeser/static/js/2.96e6ce4f.chunk.js",
     "static/js/2.96e6ce4f.chunk.js.map": "/cheeser/static/js/2.96e6ce4f.chunk.js.map",
     "index.html": "/cheeser/index.html",
-    "precache-manifest.ceeae8a17fc4528a335e2d135d0b74ee.js": "/cheeser/precache-manifest.ceeae8a17fc4528a335e2d135d0b74ee.js",
+    "precache-manifest.dc61b08f28ca67b83f71a57e9c118565.js": "/cheeser/precache-manifest.dc61b08f28ca67b83f71a57e9c118565.js",
     "service-worker.js": "/cheeser/service-worker.js",
-    "static/css/main.25dca4fe.chunk.css.map": "/cheeser/static/css/main.25dca4fe.chunk.css.map",
+    "static/css/main.229923ba.chunk.css.map": "/cheeser/static/css/main.229923ba.chunk.css.map",
     "static/media/about-us.png": "/cheeser/static/media/about-us.86073947.png",
     "static/media/AppHeader.css": "/cheeser/static/media/header-photo.c7ea3fdb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.57a6fa88.js",
     "static/js/2.96e6ce4f.chunk.js",
-    "static/css/main.25dca4fe.chunk.css",
+    "static/css/main.229923ba.chunk.css",
     "static/js/main.b5e0b972.chunk.js"
   ]
 }
