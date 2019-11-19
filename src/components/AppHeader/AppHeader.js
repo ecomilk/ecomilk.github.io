@@ -28,13 +28,18 @@ export default class AppHeader extends Component {
                     </div>
 
                     <div className="row justify-content-md-center">
-                        <div className="col-10">
-                            <Line
-                                color={'#FFDD1F'}
-                                width={'20vw'}
-                                x1={0}
-                                x2={'20vw'}
-                            />
+                        <div className="col col-md-10">
+                            <div className="row justify-content-start">
+                                <div className="col-sm-3">
+                                    <Line
+                                        color={'#FFDD1F'}
+                                        width={'100%'}
+                                        x1={0}
+                                        x2={'100%'}
+                                    />
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -50,10 +55,14 @@ export default class AppHeader extends Component {
 
                     <div className="row justify-content-md-center">
                         <div className="col col-md-10">
-                            <Button
-                                label="Вся продукция"
-                                onClick={this.onClick}
-                            />
+                            <div className="row justify-content-start">
+                                <div className="col-sm-3">
+                                    <Button
+                                        label="Вся продукция"
+                                        onClick={this.onClick}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

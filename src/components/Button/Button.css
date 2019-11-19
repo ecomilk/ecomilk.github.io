@@ -5,7 +5,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
     height: 50px;
-    min-width: 20vw;
+    width: 100%;
 }
 
 .button:hover {

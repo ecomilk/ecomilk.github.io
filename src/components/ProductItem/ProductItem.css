@@ -1,0 +1,9 @@
+.product-item .card {
+    border-radius: .75rem;
+    border: none;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.product-item .card .card-body span {
+    cursor: pointer;
+}
