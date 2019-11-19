@@ -19,6 +19,10 @@
     line-height: .9;
 }
 
+.navbar .container-fluid {
+    padding: 0;
+}
+
 .navbar-nav > li {
     margin-left: 40px;
     margin-right: 40px;

@@ -14,7 +14,9 @@ export default class AppHeader extends Component {
         return (
             <header className="app-header">
 
-                <NavBar/>
+                <NavBar
+                    logo="LOGO"
+                />
 
                 <div className="container-fluid">
                     <div className="row justify-content-md-center">
@@ -61,7 +63,9 @@ export default class AppHeader extends Component {
     }
 }
 
-const NavBar = () => {
+const NavBar = (props) => {
+    const {logo} = props;
+
     const items = [
         {id: 'a-about-us', label: 'О нас', target: '#about-us'},
         {id: 'a-products', label: 'Продукция', target: '#products'},
@@ -71,27 +75,19 @@ const NavBar = () => {
     ];
 
     const navItems = items.map(it =>
-        (<NavItem
+        <NavItem
             key={it.id}
             label={it.label}
             target={it.target}
-        />));
+        />);
 
     return (
-        <nav className="navbar navbar-expand-lg ">
-            <button className="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"/>
-            </button>
+        <nav className="navbar navbar-expand-lg">
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-1">
-
-                        </div>
+                    <div className="row justify-content-sm-center">
                         <div className="col-2">
-                            <a className="navbar-brand" href="#header">LOGO</a>
+                            <a className="navbar-brand" href="#header">{logo}</a>
                         </div>
                         <div className="col-8">
                             <ul className="navbar-nav">

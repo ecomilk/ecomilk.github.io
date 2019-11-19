@@ -12,7 +12,7 @@ export default class AboutUs extends Component {
                     <div className="row justify-content-md-center">
                         <div className="col col-md-10">
                             <div className="about-us-container">
-                                <div className="row no-gutters">
+                                <div className="row justify-content-sm-around">
                                     <div className="col-sm-6">
                                         <div className="image">
                                             <img src={imgAboutUs} alt=""/>
