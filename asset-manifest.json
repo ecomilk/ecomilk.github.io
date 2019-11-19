@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/cheeser/static/css/main.1cc9ef38.chunk.css",
-    "main.js": "/cheeser/static/js/main.fc32379b.chunk.js",
-    "main.js.map": "/cheeser/static/js/main.fc32379b.chunk.js.map",
+    "main.css": "/cheeser/static/css/main.eeb2da13.chunk.css",
+    "main.js": "/cheeser/static/js/main.c699ffe3.chunk.js",
+    "main.js.map": "/cheeser/static/js/main.c699ffe3.chunk.js.map",
     "runtime-main.js": "/cheeser/static/js/runtime-main.57a6fa88.js",
     "runtime-main.js.map": "/cheeser/static/js/runtime-main.57a6fa88.js.map",
-    "static/js/2.ec1fc079.chunk.js": "/cheeser/static/js/2.ec1fc079.chunk.js",
-    "static/js/2.ec1fc079.chunk.js.map": "/cheeser/static/js/2.ec1fc079.chunk.js.map",
+    "static/js/2.0b9151f6.chunk.js": "/cheeser/static/js/2.0b9151f6.chunk.js",
+    "static/js/2.0b9151f6.chunk.js.map": "/cheeser/static/js/2.0b9151f6.chunk.js.map",
     "index.html": "/cheeser/index.html",
-    "precache-manifest.f073b2f1bcce03ef32f04caa23440643.js": "/cheeser/precache-manifest.f073b2f1bcce03ef32f04caa23440643.js",
+    "precache-manifest.bd09606d4754320ae059e3e587408a11.js": "/cheeser/precache-manifest.bd09606d4754320ae059e3e587408a11.js",
     "service-worker.js": "/cheeser/service-worker.js",
-    "static/css/main.1cc9ef38.chunk.css.map": "/cheeser/static/css/main.1cc9ef38.chunk.css.map",
+    "static/css/main.eeb2da13.chunk.css.map": "/cheeser/static/css/main.eeb2da13.chunk.css.map",
     "static/media/about-us.png": "/cheeser/static/media/about-us.86073947.png",
     "static/media/charity.svg": "/cheeser/static/media/charity.73ec0cea.svg",
+    "static/media/cheese.png": "/cheeser/static/media/cheese.ae1292c0.png",
     "static/media/cow-head.svg": "/cheeser/static/media/cow-head.287f8060.svg",
     "static/media/ecology.svg": "/cheeser/static/media/ecology.dc738721.svg",
+    "static/media/eggs.png": "/cheeser/static/media/eggs.ca880638.png",
     "static/media/AppHeader.css": "/cheeser/static/media/header-photo.c7ea3fdb.png",
+    "static/media/honey.png": "/cheeser/static/media/honey.f4024b6c.png",
+    "static/media/milk.png": "/cheeser/static/media/milk.6c83dd2e.png",
     "static/media/plant.svg": "/cheeser/static/media/plant.bc77c14d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57a6fa88.js",
-    "static/js/2.ec1fc079.chunk.js",
-    "static/css/main.1cc9ef38.chunk.css",
-    "static/js/main.fc32379b.chunk.js"
+    "static/js/2.0b9151f6.chunk.js",
+    "static/css/main.eeb2da13.chunk.css",
+    "static/js/main.c699ffe3.chunk.js"
   ]
 }

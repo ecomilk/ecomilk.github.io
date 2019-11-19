@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a0ef0b7271b8a48db831bded557a000",
+    "revision": "9acda720d23bc9425b74d7561389cfba",
     "url": "/cheeser/index.html"
   },
   {
-    "revision": "611621e6c4cbf1c4f238",
-    "url": "/cheeser/static/css/main.1cc9ef38.chunk.css"
+    "revision": "9de616304051d01d288c",
+    "url": "/cheeser/static/css/main.eeb2da13.chunk.css"
   },
   {
-    "revision": "616d66a2633af0260cc6",
-    "url": "/cheeser/static/js/2.ec1fc079.chunk.js"
+    "revision": "f9f7c016d92424789920",
+    "url": "/cheeser/static/js/2.0b9151f6.chunk.js"
   },
   {
-    "revision": "611621e6c4cbf1c4f238",
-    "url": "/cheeser/static/js/main.fc32379b.chunk.js"
+    "revision": "9de616304051d01d288c",
+    "url": "/cheeser/static/js/main.c699ffe3.chunk.js"
   },
   {
     "revision": "984eb3f24298bd9348a5",
@@ -28,6 +28,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cheeser/static/media/charity.73ec0cea.svg"
   },
   {
+    "revision": "ae1292c095363ef5b69e7c86a6b88e13",
+    "url": "/cheeser/static/media/cheese.ae1292c0.png"
+  },
+  {
     "revision": "287f80601ca7aaa37db4e1a96a68049b",
     "url": "/cheeser/static/media/cow-head.287f8060.svg"
   },
@@ -36,8 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cheeser/static/media/ecology.dc738721.svg"
   },
   {
+    "revision": "ca8806389b3f18fd4b1dc9f3ca3d135e",
+    "url": "/cheeser/static/media/eggs.ca880638.png"
+  },
+  {
     "revision": "c7ea3fdb3fdf118cec6f07036d3d9a90",
     "url": "/cheeser/static/media/header-photo.c7ea3fdb.png"
+  },
+  {
+    "revision": "f4024b6c0150a4c32b3d27ee39f89ef1",
+    "url": "/cheeser/static/media/honey.f4024b6c.png"
+  },
+  {
+    "revision": "6c83dd2e5c80632e79fb24766642a264",
+    "url": "/cheeser/static/media/milk.6c83dd2e.png"
   },
   {
     "revision": "bc77c14d4362c417958b3d231b3fbb15",
