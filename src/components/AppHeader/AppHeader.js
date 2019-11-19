@@ -17,24 +17,15 @@ export default class AppHeader extends Component {
                 <NavBar/>
 
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-1">
-
-                        </div>
-                        <div className="col-10">
+                    <div className="row justify-content-md-center">
+                        <div className="col col-md-10">
                             <h1 className="tinos bold">
                                 Малочны <br/> маёнтак
                             </h1>
                         </div>
-                        <div className="col-1">
-
-                        </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-1">
-
-                        </div>
+                    <div className="row justify-content-md-center">
                         <div className="col-10">
                             <Line
                                 color={'#FFDD1F'}
@@ -43,39 +34,24 @@ export default class AppHeader extends Component {
                                 x2={'20vw'}
                             />
                         </div>
-                        <div className="col-1">
-
-                        </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-1">
-
-                        </div>
-                        <div className="col-10">
+                    <div className="row justify-content-md-center">
+                        <div className="col col-md-10">
                             <div className="header-paragraph">
                                 <p>
                                     Фермерские продукты для всей семьи
                                 </p>
                             </div>
                         </div>
-                        <div className="col-1">
-
-                        </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-1">
-
-                        </div>
-                        <div className="col-10">
+                    <div className="row justify-content-md-center">
+                        <div className="col col-md-10">
                             <Button
                                 label="Вся продукция"
                                 onClick={this.onClick}
                             />
-                        </div>
-                        <div className="col-1">
-
                         </div>
                     </div>
                 </div>
@@ -129,7 +105,7 @@ const NavBar = () => {
     )
 };
 
-const NavItem = ({label, target='#'}) => {
+const NavItem = ({label, target = '#'}) => {
     return (
         <li className="nav-item">
             <a className="nav-link" href={target}>{label}</a>

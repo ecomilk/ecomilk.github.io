@@ -9,13 +9,9 @@
     margin-bottom: 10vh;
 }
 
-.about-us-container .image {
-    background-image: url("./about-us.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    min-width: 100%;
+.about-us-container .image img {
+    height: 100%;
+    width: 100%;
 }
 
 .about-us-container .content {
