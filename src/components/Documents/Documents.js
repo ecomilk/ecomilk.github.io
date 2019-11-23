@@ -16,13 +16,13 @@ export default class Documents extends Component {
                     <div className="row justify-content-center">
                         <div className="col-md-10">
                             <div className="row justify-content-around mt-5">
-                                <div className="col col-sm-3">
+                                <div className="col-sm-3">
                                     <img src={doc} alt=""/>
                                 </div>
-                                <div className="col col-sm-3 mb-4">
+                                <div className="col-sm-3">
                                     <img src={doc} alt=""/>
                                 </div>
-                                <div className="col col-sm-6 pl-4 pr-4">
+                                <div className="col-sm-6 pl-4 pr-4 order-first order-lg-last mb-lg-0 mb-3">
                                     <h2>{title}</h2>
 
                                     <Line

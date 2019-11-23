@@ -14,10 +14,10 @@ export default class Products extends Component {
     render() {
         return (
             <div className="products pt-5 pb-5" id="products">
-                <div className="container-fluid mt-5 mb-5">
+                <div className="container-fluid mt-sm-5 mb-5">
                     <div className="row justify-content-md-center">
                         <div className="col col-md-10">
-                            <div className="products-container mb-5">
+                            <div className="products-container mb-sm-5">
                                 <div>
                                     <h2>Популярная продукция</h2>
                                 </div>

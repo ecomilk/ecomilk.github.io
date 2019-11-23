@@ -13,7 +13,7 @@ export default class AboutUs extends Component {
 
     render() {
         return (
-            <div className="about-us pb-5 pt-5" id="about-us">
+            <div className="about-us pb-sm-5 pt-sm-5" id="about-us">
                 <div className="container-fluid">
                     <div className="row justify-content-md-center">
                         <div className="col col-md-10">
@@ -26,7 +26,7 @@ export default class AboutUs extends Component {
                                     </div>
                                     <div className="col-sm-6">
                                         <div className="content">
-                                            <div>
+                                            <div className="mt-4 mt-md-0 mt-lg-0">
                                                 <h2>Кто мы такие?</h2>
                                             </div>
                                             <Line
@@ -52,7 +52,7 @@ export default class AboutUs extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-md-center mt-5">
+                    <div className="row justify-content-md-center pt-sm-5">
                         <div className="col col-md-10">
                             <h2>Преимущества</h2>
 
