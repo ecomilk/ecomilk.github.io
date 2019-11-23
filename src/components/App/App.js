@@ -6,6 +6,7 @@ import AppHeader from "../AppHeader/AppHeader";
 import AboutUs from "../AboutUs";
 import Products from "../Products/Products";
 import Documents from "../Documents/Documents";
+import SubscribeForm from "../SubscribeForm/SubscribeForm";
 
 export default class App extends Component {
 
@@ -31,6 +32,11 @@ export default class App extends Component {
                     images: [
                         {id: 0, src:''}
                     ]
+                },
+                {
+                    id: 4,
+                    name: 'subscribeForm',
+                    url:'api/subscribe'
                 }
             ]
         }
@@ -41,6 +47,7 @@ export default class App extends Component {
         const {sections} = this.state;
 
         const documentsProps = sections.filter(it => it.name === 'documents');
+        const subscribeFormProps = sections.filter(it => it.name === 'subscribeForm');
 
         return (
             <div className="app">
@@ -48,6 +55,7 @@ export default class App extends Component {
                 <AboutUs />
                 <Products />
                 <Documents {...documentsProps}/>
+                <SubscribeForm {...subscribeFormProps}/>
             </div>
         )
     }

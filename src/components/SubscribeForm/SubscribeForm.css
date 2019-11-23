@@ -1,3 +1,4 @@
-.subscribe-form {
-
+.subscribe-form input {
+    height: 50px;
+    border-radius: 0;
 }

@@ -53,7 +53,7 @@ export default class AboutUs extends Component {
                         </div>
                     </div>
                     <div className="row justify-content-md-center pt-sm-5">
-                        <div className="col col-md-10">
+                        <div className="col col-md-10 text-center text-md-left text-lg-left">
                             <h2>Преимущества</h2>
 
                             <Line
