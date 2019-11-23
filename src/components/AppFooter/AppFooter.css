@@ -1,3 +1,12 @@
 .app-footer {
+    background-color: var(--yellow-custom);
+}
 
+.app-footer footer {
+    color: white;
+    background-color: var(--dark-text-color);
+}
+
+.app-footer footer span {
+    display: block;
 }

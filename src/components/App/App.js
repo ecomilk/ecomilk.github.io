@@ -7,6 +7,7 @@ import AboutUs from "../AboutUs";
 import Products from "../Products/Products";
 import Documents from "../Documents/Documents";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
+import AppFooter from "../AppFooter/AppFooter";
 
 export default class App extends Component {
 
@@ -54,8 +55,9 @@ export default class App extends Component {
                 <AppHeader />
                 <AboutUs />
                 <Products />
-                <Documents {...documentsProps}/>
-                <SubscribeForm {...subscribeFormProps}/>
+                <Documents {...documentsProps} />
+                <SubscribeForm {...subscribeFormProps} />
+                <AppFooter />
             </div>
         )
     }
