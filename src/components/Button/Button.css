@@ -6,8 +6,10 @@
     font-weight: normal;
     height: 50px;
     width: 100%;
+
+    transition-duration: .5s;
 }
 
 .button:hover {
-
+    box-shadow: var(--box-shadow);
 }

@@ -1,6 +1,7 @@
 :root {
     --yellow-custom: #FFDD1F;
     --dark-text-color: #2B2B2B;
+    --box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
 }
 
 * {

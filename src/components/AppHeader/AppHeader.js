@@ -20,21 +20,20 @@ export default class AppHeader extends Component {
 
                 <div className="container-fluid">
                     <div className="row justify-content-md-center">
-                        <div className="col col-md-10">
-                            <h1 className="tinos bold">
+                        <div className="col-md-10">
+                            <h1 className="tinos font-weight-bold">
                                 Малочны <br/> маёнтак
                             </h1>
                         </div>
                     </div>
 
-                    <div className="row justify-content-md-center">
-                        <div className="col col-md-10">
+                    <div className="row justify-content-center">
+                        <div className="col-md-10">
                             <div className="row justify-content-start">
-                                <div className="col-sm-3">
+                                <div className="col-sm-12 col-lg-3">
                                     <Line
-                                        color={'#FFDD1F'}
+                                        color={'var(--yellow-custom)'}
                                         width={'100%'}
-                                        x1={0}
                                         x2={'100%'}
                                     />
                                 </div>
@@ -43,9 +42,9 @@ export default class AppHeader extends Component {
                         </div>
                     </div>
 
-                    <div className="row justify-content-md-center">
-                        <div className="col col-md-10">
-                            <div className="header-paragraph">
+                    <div className="row justify-content-center mt-sm-4 mt-lg-3">
+                        <div className="col-md-10">
+                            <div>
                                 <p>
                                     Фермерские продукты для всей семьи
                                 </p>
@@ -53,10 +52,10 @@ export default class AppHeader extends Component {
                         </div>
                     </div>
 
-                    <div className="row justify-content-md-center">
-                        <div className="col col-md-10">
+                    <div className="row justify-content-center mt-sm-4 mt-lg-4">
+                        <div className="col-md-10">
                             <div className="row justify-content-start">
-                                <div className="col-sm-3">
+                                <div className="col-sm-12 col-lg-3">
                                     <Button
                                         label="Вся продукция"
                                         onClick={this.onClick}
@@ -93,12 +92,12 @@ const NavBar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <div className="container-fluid">
+                <div className="container-fluid p-0">
                     <div className="row justify-content-sm-center">
-                        <div className="col-2">
+                        <div className="col-3">
                             <a className="navbar-brand" href="#header">{logo}</a>
                         </div>
-                        <div className="col-8">
+                        <div className="col-7">
                             <ul className="navbar-nav">
                                 {navItems}
                             </ul>
@@ -112,7 +111,7 @@ const NavBar = (props) => {
 
 const NavItem = ({label, target = '#'}) => {
     return (
-        <li className="nav-item">
+        <li className="nav-item ml-4 mr-4">
             <a className="nav-link" href={target}>{label}</a>
         </li>
     )
