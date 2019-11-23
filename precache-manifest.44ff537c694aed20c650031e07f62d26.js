@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9acda720d23bc9425b74d7561389cfba",
+    "revision": "1ea74f33b7bcd223519c5ff6f232792a",
     "url": "/cheeser/index.html"
   },
   {
-    "revision": "9de616304051d01d288c",
-    "url": "/cheeser/static/css/main.eeb2da13.chunk.css"
+    "revision": "b7f939e603f00237b41f",
+    "url": "/cheeser/static/css/main.ab36813e.chunk.css"
   },
   {
-    "revision": "f9f7c016d92424789920",
-    "url": "/cheeser/static/js/2.0b9151f6.chunk.js"
+    "revision": "977db3c80b03ac8438db",
+    "url": "/cheeser/static/js/2.fe453062.chunk.js"
   },
   {
-    "revision": "9de616304051d01d288c",
-    "url": "/cheeser/static/js/main.c699ffe3.chunk.js"
+    "revision": "b7f939e603f00237b41f",
+    "url": "/cheeser/static/js/main.44c2128e.chunk.js"
   },
   {
     "revision": "984eb3f24298bd9348a5",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "287f80601ca7aaa37db4e1a96a68049b",
     "url": "/cheeser/static/media/cow-head.287f8060.svg"
+  },
+  {
+    "revision": "041dbaf0c4cb0ebae29bcfb275e2ffdb",
+    "url": "/cheeser/static/media/doc_1.041dbaf0.png"
   },
   {
     "revision": "dc73872117fde27465be134ce10d8275",
