@@ -5,6 +5,7 @@ import './App.css';
 import AppHeader from "../AppHeader/AppHeader";
 import AboutUs from "../AboutUs";
 import Products from "../Products/Products";
+import Documents from "../Documents/Documents";
 
 export default class App extends Component {
 
@@ -19,16 +20,34 @@ export default class App extends Component {
                 {key: 'how-to-order', label: 'Как заказать', target: '#how-to-order'},
                 {key: 'blog', label: 'Блог', target: '#blog'},
                 {key: 'contacts', label: 'Контакты', target: '#contacts'},
+            ],
+
+            sections: [
+                {
+                    id: 4,
+                    name: 'documents',
+                    title: 'Документация и сертификаты качества',
+                    text: 'Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц? Непросто, местами очень сложно, но всегда полные веры в то, что мы движемся в правильном направлении. Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц?',
+                    images: [
+                        {id: 0, src:''}
+                    ]
+                }
             ]
         }
     }
 
     render() {
+
+        const {sections} = this.state;
+
+        const documentsProps = sections.filter(it => it.name === 'documents');
+
         return (
             <div className="app">
                 <AppHeader />
                 <AboutUs />
                 <Products />
+                <Documents {...documentsProps}/>
             </div>
         )
     }

@@ -1,5 +1,11 @@
+:root {
+    --yellow-custom: #FFDD1F;
+    --dark-text-color: #2B2B2B;
+}
+
 * {
     scroll-behavior: smooth;
+    /*color: var(--dark-text-color);*/
 }
 
 body {
@@ -35,9 +41,13 @@ a {
 }
 
 .bg-yellow {
-    background: #FFDD1F;
+    background: var(--yellow-custom);
 }
 
 .text-yellow {
-    color: #FFDD1F;
+    color: var(--yellow-custom);
+}
+
+.section {
+
 }
