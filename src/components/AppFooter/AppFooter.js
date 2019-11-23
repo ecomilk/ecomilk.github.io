@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 
 import './AppFooter.css'
-import instagramIcon from './images/Instagram/instagram.svg'
-import telegramIcon from './images/Telegram/telegram.svg'
-import viberIcon from './images/Viber/viber.svg'
-import visaImg from './images/Visa/visa.svg'
-import masterCardImg from './images/Mastercard/mastercard.svg'
+import instagramIcon from './images/instagram.svg'
+import telegramIcon from './images/telegram.svg'
+import viberIcon from './images/viber.svg'
+import visaImg from './images/visa.svg'
+import masterCardImg from './images/mastercard.svg'
 
 export default class AppFooter extends Component {
 
