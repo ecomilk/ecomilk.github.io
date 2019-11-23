@@ -30,6 +30,12 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: inherit;
+    font-weight: 500 !important;
+    text-decoration: none;
+}
+
 .grid {
     display: grid;
 }

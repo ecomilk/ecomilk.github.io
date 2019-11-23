@@ -7,6 +7,20 @@
     background-color: var(--dark-text-color);
 }
 
-.app-footer footer span {
+.app-footer span {
     display: block;
 }
+
+.app-footer .social-icons span {
+    display: inline;
+    cursor: pointer;
+}
+
+.app-footer .social-icons span img {
+    max-width: 36px;
+}
+
+.app-footer .list span {
+    margin-bottom: .5rem;
+}
+

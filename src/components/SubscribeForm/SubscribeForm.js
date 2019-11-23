@@ -11,7 +11,7 @@ export default class SubscribeForm extends Component {
 
     render() {
         return (
-            <div className="subscribe-form container-fluid pt-5 pb-5">
+            <div id="subscribe-form" className="subscribe-form container-fluid pt-5 pb-5">
                 <div className="row pt-5 pb-5 justify-content-center">
                     <div className="col-md-10 col-sm-12 text-center">
                         <h3>Подписаться на рассылку</h3>
