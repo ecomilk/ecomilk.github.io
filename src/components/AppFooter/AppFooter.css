@@ -11,13 +11,13 @@
     display: block;
 }
 
-.app-footer .social-icons span {
-    display: inline;
+.app-footer .social-icons a {
+    display: inline-block;
     cursor: pointer;
 }
 
-.app-footer .social-icons span img {
-    max-width: 36px;
+.app-footer .social-icons a img {
+    max-width: 2.25rem;
 }
 
 .app-footer .list span {

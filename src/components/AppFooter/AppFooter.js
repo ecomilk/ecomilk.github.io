@@ -2,11 +2,12 @@ import React, {Component} from 'react'
 
 import './AppFooter.css'
 
-import instagramIcon from './images/instagram-icon.svg'
-import telegramIcon from './images/telegram-icon.svg'
-import viberIcon from './images/viber-icon.svg'
-import visaImg from './images/visa-icon.svg'
-import masterCardImg from './images/mastercard-icon.svg'
+import instagramIcon from './assets/Instagram/color.png'
+import telegramIcon from './assets/Telegram/color.png'
+import viberIcon from './assets/Viber/color.png'
+import vkIcon from './assets/VK/color.png'
+import visaImg from './assets/Visa/color.png'
+import masterCardImg from './assets/Mastercard/color.png'
 
 export default class AppFooter extends Component {
 
@@ -43,27 +44,30 @@ export default class AppFooter extends Component {
                                         <div className="mt-4 mb-2">
                                             <h6>Мы принимаем к оплате:</h6>
                                             <div className="social-icons">
-                                                <span>
-                                                    <img src={visaImg} alt=""/>
-                                                </span>
-                                                <span className="ml-2">
-                                                    <img src={masterCardImg} alt=""/>
-                                                </span>
+                                                <a href="#">
+                                                    <img src={visaImg} alt="visa"/>
+                                                </a>
+                                                <a href="#" className="ml-2">
+                                                    <img src={masterCardImg} alt="masterCard"/>
+                                                </a>
                                             </div>
                                         </div>
 
                                         <div className="mt-4">
                                             <h6>Мы в соц.сетях:</h6>
                                             <div className="social-icons">
-                                                <span>
-                                                    <img src={instagramIcon} alt=""/>
-                                                </span>
-                                                <span className="ml-2">
-                                                    <img src={telegramIcon} alt=""/>
-                                                </span>
-                                                <span className="ml-2">
-                                                    <img src={viberIcon} alt=""/>
-                                                </span>
+                                                <a href="#">
+                                                    <img src={instagramIcon} alt="instagram"/>
+                                                </a>
+                                                <a href="#" className="ml-2">
+                                                    <img src={telegramIcon} alt="telegram"/>
+                                                </a>
+                                                <a href="#" className="ml-2">
+                                                    <img src={viberIcon} alt="viber"/>
+                                                </a>
+                                                <a href="#" className="ml-2">
+                                                    <img src={vkIcon} alt="vk"/>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
