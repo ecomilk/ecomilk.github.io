@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c58c4cb209769f761fc01f66eba3b813",
+    "revision": "f8010a2abe84b22b33865ff83b31d8e5",
     "url": "/cheeser/index.html"
   },
   {
-    "revision": "244b9fe465dde95941c6",
-    "url": "/cheeser/static/css/main.ed52340f.chunk.css"
+    "revision": "7d3a627e1e5e0e44ffeb",
+    "url": "/cheeser/static/css/main.21187fbc.chunk.css"
   },
   {
-    "revision": "64934517b367d50025b7",
-    "url": "/cheeser/static/js/2.6f807f87.chunk.js"
+    "revision": "70fc60e1e3aeec48c6eb",
+    "url": "/cheeser/static/js/2.dc1ae51e.chunk.js"
   },
   {
-    "revision": "244b9fe465dde95941c6",
-    "url": "/cheeser/static/js/main.7b80dc50.chunk.js"
+    "revision": "7d3a627e1e5e0e44ffeb",
+    "url": "/cheeser/static/js/main.7de4a2ce.chunk.js"
   },
   {
     "revision": "984eb3f24298bd9348a5",
@@ -56,31 +56,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cheeser/static/media/honey.f4024b6c.png"
   },
   {
-    "revision": "e37c4df02b2e855212dce1c20d3868eb",
-    "url": "/cheeser/static/media/instagram-icon.e37c4df0.svg"
-  },
-  {
-    "revision": "6991d7c4c035592cfc9e406168f235a8",
-    "url": "/cheeser/static/media/mastercard-icon.6991d7c4.svg"
-  },
-  {
     "revision": "6c83dd2e5c80632e79fb24766642a264",
     "url": "/cheeser/static/media/milk.6c83dd2e.png"
   },
   {
     "revision": "bc77c14d4362c417958b3d231b3fbb15",
     "url": "/cheeser/static/media/plant.bc77c14d.svg"
-  },
-  {
-    "revision": "276a5e86b5064f7c19d554fedeff148b",
-    "url": "/cheeser/static/media/telegram-icon.276a5e86.svg"
-  },
-  {
-    "revision": "ec166b8a9e9aef61c92f6e177565eeb8",
-    "url": "/cheeser/static/media/viber-icon.ec166b8a.svg"
-  },
-  {
-    "revision": "094838833de94fe2381adf95316c99fb",
-    "url": "/cheeser/static/media/visa-icon.09483883.svg"
   }
 ]);

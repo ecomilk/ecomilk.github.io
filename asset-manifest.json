@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cheeser/static/css/main.ed52340f.chunk.css",
-    "main.js": "/cheeser/static/js/main.7b80dc50.chunk.js",
-    "main.js.map": "/cheeser/static/js/main.7b80dc50.chunk.js.map",
+    "main.css": "/cheeser/static/css/main.21187fbc.chunk.css",
+    "main.js": "/cheeser/static/js/main.7de4a2ce.chunk.js",
+    "main.js.map": "/cheeser/static/js/main.7de4a2ce.chunk.js.map",
     "runtime-main.js": "/cheeser/static/js/runtime-main.57a6fa88.js",
     "runtime-main.js.map": "/cheeser/static/js/runtime-main.57a6fa88.js.map",
-    "static/js/2.6f807f87.chunk.js": "/cheeser/static/js/2.6f807f87.chunk.js",
-    "static/js/2.6f807f87.chunk.js.map": "/cheeser/static/js/2.6f807f87.chunk.js.map",
+    "static/js/2.dc1ae51e.chunk.js": "/cheeser/static/js/2.dc1ae51e.chunk.js",
+    "static/js/2.dc1ae51e.chunk.js.map": "/cheeser/static/js/2.dc1ae51e.chunk.js.map",
     "index.html": "/cheeser/index.html",
-    "precache-manifest.fde8c2c54dda008adb2000a7be21369f.js": "/cheeser/precache-manifest.fde8c2c54dda008adb2000a7be21369f.js",
+    "precache-manifest.d9c699388dae5b76c71b0233450daf1e.js": "/cheeser/precache-manifest.d9c699388dae5b76c71b0233450daf1e.js",
     "service-worker.js": "/cheeser/service-worker.js",
-    "static/css/main.ed52340f.chunk.css.map": "/cheeser/static/css/main.ed52340f.chunk.css.map",
+    "static/css/main.21187fbc.chunk.css.map": "/cheeser/static/css/main.21187fbc.chunk.css.map",
     "static/media/about-us.png": "/cheeser/static/media/about-us.86073947.png",
     "static/media/charity.svg": "/cheeser/static/media/charity.73ec0cea.svg",
     "static/media/cheese.png": "/cheeser/static/media/cheese.ae1292c0.png",
@@ -20,18 +20,13 @@
     "static/media/eggs.png": "/cheeser/static/media/eggs.ca880638.png",
     "static/media/AppHeader.css": "/cheeser/static/media/header-photo.c7ea3fdb.png",
     "static/media/honey.png": "/cheeser/static/media/honey.f4024b6c.png",
-    "static/media/instagram-icon.svg": "/cheeser/static/media/instagram-icon.e37c4df0.svg",
-    "static/media/mastercard-icon.svg": "/cheeser/static/media/mastercard-icon.6991d7c4.svg",
     "static/media/milk.png": "/cheeser/static/media/milk.6c83dd2e.png",
-    "static/media/plant.svg": "/cheeser/static/media/plant.bc77c14d.svg",
-    "static/media/telegram-icon.svg": "/cheeser/static/media/telegram-icon.276a5e86.svg",
-    "static/media/viber-icon.svg": "/cheeser/static/media/viber-icon.ec166b8a.svg",
-    "static/media/visa-icon.svg": "/cheeser/static/media/visa-icon.09483883.svg"
+    "static/media/plant.svg": "/cheeser/static/media/plant.bc77c14d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.57a6fa88.js",
-    "static/js/2.6f807f87.chunk.js",
-    "static/css/main.ed52340f.chunk.css",
-    "static/js/main.7b80dc50.chunk.js"
+    "static/js/2.dc1ae51e.chunk.js",
+    "static/css/main.21187fbc.chunk.css",
+    "static/js/main.7de4a2ce.chunk.js"
   ]
 }
