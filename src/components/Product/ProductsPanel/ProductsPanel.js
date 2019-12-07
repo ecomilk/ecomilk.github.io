@@ -4,15 +4,16 @@ import './ProductsPanel.css'
 import Line from "../../Line";
 import Button from "../../Button";
 import ProductItem from "../ProductItem";
+import {Col, Container, Row} from "react-bootstrap";
 
 const ProductsPanel = (props) => {
 
     const {title, productItems = []} = props;
 
     const productElements = productItems.map(it => (
-        <div
-            key={`product-item-container-${it.id}`}
-            className="col-sm-3 mb-4">
+        <Col sm={12} md={true} lg={true}
+             key={`product-item-container-${it.id}`}
+             className="mb-4">
             <ProductItem
                 key={`product-item-${it.id}`}
                 id={it.id}
@@ -20,49 +21,37 @@ const ProductsPanel = (props) => {
                 title={it.title}
                 text={it.text}
             />
-        </div>
+        </Col>
     ));
 
     return (
         <div className="products-panel pt-5 pb-5" id="products-panel">
-            <div className="container-fluid mt-sm-5 mb-5">
-                <div className="row justify-content-md-center">
-                    <div className="col col-md-10">
+            <Container className="mt-sm-5 mb-5">
+                <Row>
+                    <Col sm={12} md={true} lg={true}>
                         <div className="products-container mb-sm-5">
                             <h2>{title}</h2>
-                            <div className="row justify-content-start">
-                                <div className="col-sm-3">
-                                    <div>
-                                        <Line/>
-                                    </div>
-                                </div>
-                            </div>
+                            <Row>
+                                <Col sm={12} md={3} lg={3}>
+                                    <Line/>
+                                </Col>
+                            </Row>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
 
-                <div className="row justify-content-md-center">
-                    <div className="col col-md-10">
-                        <div className="row justify-content-sm-around">
-                            {productElements}
-                        </div>
-                    </div>
-                </div>
+                <Row>
+                    {productElements}
+                </Row>
 
-                <div className="row justify-content-md-center mt-5">
-                    <div className="col col-md-10">
-                        <div className="row justify-content-start">
-                            <div className="col-sm-3">
-                                <div>
-                                    <Button
-                                        href="product"
-                                        label="Вся продукция"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <Row className="mt-5">
+                    <Col sm={12} md={3} lg={3}>
+                        <Button
+                            href="product"
+                            label="Вся продукция"/>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 };

@@ -21,11 +21,7 @@ const AboutUsPanel = (props) => {
                             <div className="mt-4 mt-md-0 mt-lg-0">
                                 <h2>{title}</h2>
                             </div>
-                            <Line
-                                color={'#FFDD1F'}
-                                width={'20vw'}
-                                x1={0}
-                                x2={'20vw'}
+                            <Line x2={'60%'}
                             />
                             <div>
                                 <p className="text-secondary">

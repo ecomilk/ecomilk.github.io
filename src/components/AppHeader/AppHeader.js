@@ -35,21 +35,15 @@ const AppHeader = (props) => {
                             Малочны <br/> маёнтак
                         </h1>
                     </Col>
-
                     <Col>
-                        <div className="row justify-content-start">
+                        <Row>
                             <Col sm={12} md={3} lg={3}>
                                 <Line/>
                             </Col>
-                        </div>
+                        </Row>
                     </Col>
                 </Row>
-
-                <Row className="row justify-content-center">
-
-                </Row>
-
-                <Row className="row justify-content-center mt-sm-4 mt-lg-3">
+                <Row className="mt-sm-4 mt-lg-3">
                     <Col>
                         <div>
                             <p>
@@ -58,17 +52,12 @@ const AppHeader = (props) => {
                         </div>
                     </Col>
                 </Row>
-
-                <Row className="row justify-content-center mt-sm-4 mt-lg-4">
-                    <Col>
-                        <div className="row justify-content-start">
-                            <div className="col-sm-12 col-lg-3">
-                                <Button
-                                    href="#products-panel"
-                                    label="Вся продукция"
-                                />
-                            </div>
-                        </div>
+                <Row className="mt-sm-4 mt-lg-4">
+                    <Col sm={12} md={3} lg={3}>
+                        <Button
+                            href="#products-panel"
+                            label="Вся продукция"
+                        />
                     </Col>
                 </Row>
             </Container>
