@@ -1,6 +1,6 @@
 import React from "react";
 import './BenefitsPanel.css'
-import Line from "../Line";
+import Line from "../../Line";
 import BenefitItem from "../BenefitItem";
 
 const BenefitsPanel = (props) => {

@@ -4,11 +4,11 @@ import './App.css';
 
 import AppHeader from "../AppHeader/AppHeader";
 import AboutUsPanel from "../AboutUs";
-import Products from "../Products/Products";
+import ProductsPanel from "../ProductsPanel/ProductsPanel";
 import Documents from "../Documents/Documents";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 import AppFooter from "../AppFooter/AppFooter";
-import BenefitsPanel from "../BenefitsPanel";
+import BenefitsPanel from "../Benefit/BenefitsPanel";
 
 import imgAboutUs from '../../assets/AboutUsPanel/about-us.png'
 
@@ -70,7 +70,7 @@ export default class App extends Component {
                     title={benefitsPanelProps.title}
                     benefitItems={getBenefitItems()}
                 />
-                <Products/>
+                <ProductsPanel/>
                 <Documents {...documentsProps} />
                 <SubscribeForm {...subscribeFormProps} />
                 <AppFooter/>

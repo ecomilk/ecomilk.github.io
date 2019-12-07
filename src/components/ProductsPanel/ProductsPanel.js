@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import './Products.css'
+import './ProductsPanel.css'
 import Line from "../Line";
 import Button from "../Button";
 import ProductItem from "../ProductItem";
@@ -10,7 +10,7 @@ import milk from './images/milk.png';
 import honey from './images/honey.png';
 import cheese from './images/cheese.png';
 
-export default class Products extends Component {
+export default class ProductsPanel extends Component {
     render() {
         return (
             <div className="products pt-5 pb-5" id="products">
