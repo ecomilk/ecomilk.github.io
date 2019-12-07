@@ -1,5 +1,4 @@
-.about-us {
-    min-height: 50vh;
+.about-us-panel {
     background: #FFFFFF;
     color: #333333;
 }
@@ -20,10 +19,8 @@
 
 .about-us-container .content {
     padding: 2vw 4vw;
-    /*margin-bottom: 20px;*/
     height: 100%;
     width: 100%;
-    background: #F9F9F9;
 }
 
 .about-us-container .content p {
@@ -34,5 +31,5 @@
 }
 
 .about-us-container .content p {
-    font-size: 18px;
+    font-size: 1.2rem;
 }

@@ -1,6 +1,6 @@
 .documents {
-    background: var(--yellow-custom);
-    color: var(--dark-text-color);
+    background: var(--color-yellow);
+    color: var(--color-dark);
 }
 
 .documents img {

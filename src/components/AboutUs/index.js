@@ -1,2 +1,3 @@
-import AboutUs from "./AboutUs"
-export default AboutUs
+import AboutUsPanel from "./AboutUsPanel"
+
+export default AboutUsPanel

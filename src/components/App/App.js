@@ -3,11 +3,19 @@ import React, {Component} from 'react';
 import './App.css';
 
 import AppHeader from "../AppHeader/AppHeader";
-import AboutUs from "../AboutUs";
+import AboutUsPanel from "../AboutUs";
 import Products from "../Products/Products";
 import Documents from "../Documents/Documents";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 import AppFooter from "../AppFooter/AppFooter";
+import BenefitsPanel from "../BenefitsPanel";
+
+import imgAboutUs from '../../assets/AboutUsPanel/about-us.png'
+
+import charitySvg from '../../assets/Benefit/BenefitItem/charity.svg'
+import cowHeadSvg from '../../assets/Benefit/BenefitItem/cow-head.svg'
+import ecologySvg from '../../assets/Benefit/BenefitItem/ecology.svg'
+import plantSvg from '../../assets/Benefit/BenefitItem/plant.svg'
 
 export default class App extends Component {
 
@@ -31,13 +39,13 @@ export default class App extends Component {
                     title: 'Документация и сертификаты качества',
                     text: 'Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц? Непросто, местами очень сложно, но всегда полные веры в то, что мы движемся в правильном направлении. Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц?',
                     images: [
-                        {id: 0, src:''}
+                        {id: 0, src: ''}
                     ]
                 },
                 {
                     id: 4,
                     name: 'subscribeForm',
-                    url:'api/subscribe'
+                    url: 'api/subscribe'
                 }
             ]
         }
@@ -52,13 +60,49 @@ export default class App extends Component {
 
         return (
             <div className="app">
-                <AppHeader />
-                <AboutUs />
-                <Products />
+                <AppHeader/>
+                <AboutUsPanel
+                    title={aboutUsProps.title}
+                    text={aboutUsProps.text}
+                    img={aboutUsProps.img}
+                />
+                <BenefitsPanel
+                    title={benefitsPanelProps.title}
+                    benefitItems={getBenefitItems()}
+                />
+                <Products/>
                 <Documents {...documentsProps} />
                 <SubscribeForm {...subscribeFormProps} />
-                <AppFooter />
+                <AppFooter/>
             </div>
         )
     }
 }
+
+const getBenefitItems = () => {
+    return [
+        {id: 0, title: 'Только свежие продукты', img: cowHeadSvg},
+        {id: 1, title: 'Без ГМО', img: ecologySvg},
+        {id: 2, title: 'Сертификаты качества', img: plantSvg},
+        {id: 3, title: 'Сделано с любовью', img: charitySvg},
+    ]
+};
+
+const aboutUsProps = {
+    title: 'Кто мы такие?',
+    text: 'Соответствующему всем европейским стандартам качества и ' +
+        'производительностью 4 тонны сыра в месяц? Непросто, местами очень ' +
+        'сложно, но всегда полные веры в то, что мы движемся в правильном ' +
+        'направлении. Соответствующему всем европейским стандартам качества и ' +
+        'производительностью 4 тонны сыра в месяц? Непросто, местами очень ' +
+        'сложно, но всегда полные веры в то, что мы движемся в правильном ' +
+        'направлении.',
+    img: imgAboutUs
+};
+
+const benefitsPanelProps = {
+    title: 'Преимущества',
+    benefitItems: getBenefitItems()
+};
+
+
