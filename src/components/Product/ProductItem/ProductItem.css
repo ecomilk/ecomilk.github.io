@@ -1,8 +1,14 @@
 .product-item {
-
+    border-radius: .75rem;
+    cursor: pointer;
+    transition-duration: .5s;
 }
+
+.product-item:hover {
+    box-shadow: var(--box-shadow);
+}
+
 .product-item .card {
     border-radius: .75rem;
     border: none;
-    box-shadow: var(--box-shadow);
 }
