@@ -4,7 +4,7 @@ import './App.css';
 
 import AppHeader from "../AppHeader/AppHeader";
 import AboutUsPanel from "../AboutUs";
-import ProductsPanel from "../ProductsPanel/ProductsPanel";
+import ProductsPanel from "../Product/ProductsPanel/ProductsPanel";
 import Documents from "../Documents/Documents";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 import AppFooter from "../AppFooter/AppFooter";
@@ -16,6 +16,11 @@ import charitySvg from '../../assets/Benefit/BenefitItem/charity.svg'
 import cowHeadSvg from '../../assets/Benefit/BenefitItem/cow-head.svg'
 import ecologySvg from '../../assets/Benefit/BenefitItem/ecology.svg'
 import plantSvg from '../../assets/Benefit/BenefitItem/plant.svg'
+
+import cheeseImg from '../../assets/Products/ProductItem/cheese.png'
+import eggsImg from '../../assets/Products/ProductItem/eggs.png'
+import honeyImg from '../../assets/Products/ProductItem/honey.png'
+import milkImg from '../../assets/Products/ProductItem/milk.png'
 
 export default class App extends Component {
 
@@ -70,7 +75,10 @@ export default class App extends Component {
                     title={benefitsPanelProps.title}
                     benefitItems={getBenefitItems()}
                 />
-                <ProductsPanel/>
+                <ProductsPanel
+                    title={productsPanelProps.title}
+                    productItems={productsPanelProps.productItems}
+                />
                 <Documents {...documentsProps} />
                 <SubscribeForm {...subscribeFormProps} />
                 <AppFooter/>
@@ -78,6 +86,15 @@ export default class App extends Component {
         )
     }
 }
+
+const getProductItems = () => {
+    return [
+        {id: 0, title: 'Яйца куриные С1', text: 'Состав: яйца, яйца, яйца', img: eggsImg},
+        {id: 1, title: 'Молоко домашнее', text: 'Состав: молоко натуральное', img: milkImg},
+        {id: 2, title: 'Мед пчелиный', text: 'Состав: мед, сахар', img: honeyImg},
+        {id: 3, title: 'Сыр деревенский', text: 'Состав: сыр мягкий', img: cheeseImg}
+    ]
+};
 
 const getBenefitItems = () => {
     return [
@@ -103,6 +120,11 @@ const aboutUsProps = {
 const benefitsPanelProps = {
     title: 'Преимущества',
     benefitItems: getBenefitItems()
+};
+
+const productsPanelProps = {
+    title: 'Популярная продукция',
+    productItems: getProductItems()
 };
 
 

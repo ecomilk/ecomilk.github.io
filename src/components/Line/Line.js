@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Line.css'
 
-const Line = ({color, width, height = 4, x1 = 0, x2 = 0, y1 = 0, y2 = 0}) => {
+const Line = ({color = 'var(--color-yellow)', width = '100%', height = 4, x1 = 0, x2 = '100%', y1 = 0, y2 = 0}) => {
     const style = {
         stroke: color,
         strokeWidth: 4

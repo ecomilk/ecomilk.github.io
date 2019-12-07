@@ -31,11 +31,7 @@ export default class AppHeader extends Component {
                         <div className="col-md-10">
                             <div className="row justify-content-start">
                                 <div className="col-sm-12 col-lg-3">
-                                    <Line
-                                        color={'var(--yellow-custom)'}
-                                        width={'100%'}
-                                        x2={'100%'}
-                                    />
+                                    <Line/>
                                 </div>
                             </div>
 

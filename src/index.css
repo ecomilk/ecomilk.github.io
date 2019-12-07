@@ -22,7 +22,6 @@ a {
 
 a:hover {
     color: inherit;
-    font-weight: 500 !important;
     text-decoration: none;
 }
 
