@@ -28,7 +28,6 @@ export default class SubscribeForm extends Component {
                                 <div className="col-sm-12 col-md-3">
                                     <Button
                                         label="Отправить"
-                                        onClick={this.onSubmit}
                                     />
                                 </div>
                             </div>

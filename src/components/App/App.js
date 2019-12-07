@@ -65,7 +65,10 @@ export default class App extends Component {
 
         return (
             <div className="app">
-                <AppHeader/>
+                <AppHeader
+                    logo={headerProps.logo}
+                    navLinkItems={headerProps.navLinkItems}
+                />
                 <AboutUsPanel
                     title={aboutUsProps.title}
                     text={aboutUsProps.text}
@@ -105,6 +108,16 @@ const getBenefitItems = () => {
     ]
 };
 
+const getNavLinkItems = () => {
+    return [
+        {id: 'a-about-us', label: 'О нас', href: '#about-us'},
+        {id: 'a-products', label: 'Продукция', href: '#products'},
+        {id: 'a-how-to-purchase', label: 'Как заказать', href: '#how-to-purchase'},
+        {id: 'a-blog', label: 'Блог', href: '#blog'},
+        {id: 'a-contacts', label: 'Контакты', href: '#contacts'}
+    ];
+};
+
 const aboutUsProps = {
     title: 'Кто мы такие?',
     text: 'Соответствующему всем европейским стандартам качества и ' +
@@ -125,6 +138,11 @@ const benefitsPanelProps = {
 const productsPanelProps = {
     title: 'Популярная продукция',
     productItems: getProductItems()
+};
+
+const headerProps = {
+    logo: 'CHEESER',
+    navLinkItems: getNavLinkItems()
 };
 
 

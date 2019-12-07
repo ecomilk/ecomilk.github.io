@@ -54,7 +54,9 @@ const ProductsPanel = (props) => {
                         <div className="row justify-content-start">
                             <div className="col-sm-3">
                                 <div>
-                                    <Button label="Вся продукция"/>
+                                    <Button
+                                        href="product"
+                                        label="Вся продукция"/>
                                 </div>
                             </div>
                         </div>

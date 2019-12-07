@@ -1,114 +1,80 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 import './AppHeader.css'
 import Button from "../Button";
 import Line from "../Line";
+import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 
-export default class AppHeader extends Component {
+const AppHeader = (props) => {
 
-    onClick = (event) => {
-        console.log(event.target)
-    };
+    const {navLinkItems = [], logo = 'Logo'} = props;
 
-    render() {
-        return (
-            <header className="app-header">
-
-                <NavBar
-                    logo="LOGO"
-                />
-
-                <div className="container-fluid">
-                    <div className="row justify-content-md-center">
-                        <div className="col-md-10">
-                            <h1 className="tinos font-weight-bold">
-                                Малочны <br/> маёнтак
-                            </h1>
-                        </div>
-                    </div>
-
-                    <div className="row justify-content-center">
-                        <div className="col-md-10">
-                            <div className="row justify-content-start">
-                                <div className="col-sm-12 col-lg-3">
-                                    <Line/>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="row justify-content-center mt-sm-4 mt-lg-3">
-                        <div className="col-md-10">
-                            <div>
-                                <p>
-                                    Фермерские продукты для всей семьи
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row justify-content-center mt-sm-4 mt-lg-4">
-                        <div className="col-md-10">
-                            <div className="row justify-content-start">
-                                <div className="col-sm-12 col-lg-3">
-                                    <Button
-                                        label="Вся продукция"
-                                        onClick={this.onClick}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </header>
-        )
-    }
-}
-
-const NavBar = (props) => {
-    const {logo} = props;
-
-    const items = [
-        {id: 'a-about-us', label: 'О нас', target: '#about-us'},
-        {id: 'a-products', label: 'Продукция', target: '#products'},
-        {id: 'a-how-to-purchase', label: 'Как заказать', target: '#how-to-purchase'},
-        {id: 'a-blog', label: 'Блог', target: '#blog'},
-        {id: 'a-contacts', label: 'Контакты', target: '#contacts'}
-    ];
-
-    const navItems = items.map(it =>
-        <NavItem
-            key={it.id}
-            label={it.label}
-            target={it.target}
-        />);
+    const navLinkElements = navLinkItems.map(it =>
+        <Nav.Link key={`nav-link-item-${it.id}`} href={it.href}>{it.label}</Nav.Link>
+    );
 
     return (
-        <nav className="navbar navbar-expand-lg">
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <div className="container-fluid p-0">
-                    <div className="row justify-content-sm-center">
-                        <div className="col-3">
-                            <a className="navbar-brand" href="#header">{logo}</a>
+        <header className="app-header">
+
+            <Container>
+                <Navbar collapseOnSelect expand="lg" variant="dark">
+                    <Navbar.Brand href="#home">{logo}</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                        <Nav justify={true}>
+                            {navLinkElements}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Container>
+
+            <Container>
+                <Row className="row justify-content-md-center">
+                    <Col sm={12} md={12} lg={12}>
+                        <h1 className="tinos font-weight-bold">
+                            Малочны <br/> маёнтак
+                        </h1>
+                    </Col>
+
+                    <Col>
+                        <div className="row justify-content-start">
+                            <Col sm={12} md={3} lg={3}>
+                                <Line/>
+                            </Col>
                         </div>
-                        <div className="col-7">
-                            <ul className="navbar-nav">
-                                {navItems}
-                            </ul>
+                    </Col>
+                </Row>
+
+                <Row className="row justify-content-center">
+
+                </Row>
+
+                <Row className="row justify-content-center mt-sm-4 mt-lg-3">
+                    <Col>
+                        <div>
+                            <p>
+                                Фермерские продукты для всей семьи
+                            </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+                    </Col>
+                </Row>
+
+                <Row className="row justify-content-center mt-sm-4 mt-lg-4">
+                    <Col>
+                        <div className="row justify-content-start">
+                            <div className="col-sm-12 col-lg-3">
+                                <Button
+                                    href="#products-panel"
+                                    label="Вся продукция"
+                                />
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
+        </header>
     )
 };
 
-const NavItem = ({label, target = '#'}) => {
-    return (
-        <li className="nav-item ml-4 mr-4">
-            <a className="nav-link" href={target}>{label}</a>
-        </li>
-    )
-};
+export default AppHeader

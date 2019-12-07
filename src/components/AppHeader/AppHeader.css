@@ -1,7 +1,7 @@
 .app-header {
     background-image: url("./header-photo.png");
     min-height: 100vh;
-    color: white;
+    color: var(--color-white);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,24 +26,52 @@
     }
 }
 
-.navbar .container-fluid {
-    /*padding: 0;*/
+@media screen and (min-width: 601px) {
+    header span.title {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    header .navbar-brand {
+        color: inherit;
+        font-weight: bold;
+        font-size: 2.25rem;
+    }
+
+    header .content {
+        margin-top: 20vh;
+    }
+
+    header .nav-link {
+        /*color: var(--color-white) !important;*/
+        font-size: 1rem;
+        font-weight: normal;
+        margin-left: 4rem;
+    }
 }
 
-.navbar-nav > li {
-    /*margin-left: 40px;*/
-    /*margin-right: 40px;*/
-}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    header span.title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-.navbar-nav > li > a {
-    font-weight: 300;
-}
+    header .navbar-brand {
+        color: inherit;
+        font-weight: bold;
+        font-size: 2rem;
+    }
 
-.app-header .header-paragraph {
-    /*margin-top: 10px;*/
-}
-.app-header .button {
-    /*margin-top: 36px;*/
+    header .content {
+        padding-top: 5vh;
+    }
+
+    header .nav-link {
+        /*color: var(--color-white) !important;*/
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
 }
 
 .app-header .header-paragraph p {
