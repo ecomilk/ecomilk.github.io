@@ -5,7 +5,7 @@ import './App.css';
 import AppHeader from "../AppHeader/AppHeader";
 import AboutUsPanel from "../AboutUs";
 import ProductsPanel from "../Product/ProductsPanel/ProductsPanel";
-import Documents from "../Documents/Documents";
+import DocumentsPanel from "../Documents/DocumentsPanel";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 import AppFooter from "../AppFooter/AppFooter";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
@@ -82,7 +82,7 @@ export default class App extends Component {
                     title={productsPanelProps.title}
                     productItems={productsPanelProps.productItems}
                 />
-                <Documents {...documentsProps} />
+                <DocumentsPanel {...documentsProps} />
                 <SubscribeForm {...subscribeFormProps} />
                 <AppFooter/>
             </div>

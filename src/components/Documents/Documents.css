@@ -1,13 +1,14 @@
-.documents {
+.documents-panel {
+    padding: 6rem 0;
     background: var(--color-yellow);
     color: var(--color-dark);
 }
 
-.documents img {
+.documents-panel img {
     min-width: 100%;
     margin-bottom: 1.5rem;
 }
 
-.documents p {
+.documents-panel p {
     line-height: 1.8;
 }
