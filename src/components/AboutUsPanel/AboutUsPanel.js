@@ -18,7 +18,7 @@ const AboutUsPanel = (props) => {
                     </Col>
                     <Col sm={12} md={6} lg={6}>
                         <div className="content">
-                            <div className="mt-4 mt-md-0 mt-lg-0">
+                            <div>
                                 <h2>{title}</h2>
                             </div>
                             <Line x2={'60%'}
