@@ -1,5 +1,5 @@
 import React from 'react'
-import './AboutUs.css'
+import './AboutUsPanel.css'
 
 import {Col, Container, Row} from "react-bootstrap";
 
@@ -8,7 +8,7 @@ import Line from "../Line";
 const AboutUsPanel = (props) => {
     const {title, text, img} = props;
     return (
-        <div className="about-us-panel pb-sm-5 pt-sm-5" id="about-us-panel">
+        <div className="panel about-us-panel" id="about-us-panel">
             <Container>
                 <Row className="about-us-container">
                     <Col sm={12} md={6} lg={6}>

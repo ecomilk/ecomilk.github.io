@@ -70,3 +70,7 @@ input:focus {
 .shadowOnHover:hover {
     box-shadow: var(--box-shadow);
 }
+
+.panel {
+    padding: 6rem 0;
+}

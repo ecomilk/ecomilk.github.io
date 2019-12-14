@@ -25,8 +25,8 @@ const ProductsPanel = (props) => {
     ));
 
     return (
-        <div className="products-panel pt-5 pb-5" id="products-panel">
-            <Container className="mt-sm-5 mb-5">
+        <div className="panel products-panel" id="products-panel">
+            <Container>
                 <Row>
                     <Col sm={12} md={true} lg={true}>
                         <div className="products-container mb-sm-5">

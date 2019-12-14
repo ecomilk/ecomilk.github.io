@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import './App.css';
 
 import Header from "../Header/Header";
-import AboutUsPanel from "../AboutUs";
+import AboutUsPanel from "../AboutUsPanel";
 import ProductsPanel from "../Product/ProductsPanel/ProductsPanel";
 import DocumentPanel from "../DocumentPanel/DocumentPanel";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";

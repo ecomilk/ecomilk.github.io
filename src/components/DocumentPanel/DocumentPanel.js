@@ -10,7 +10,7 @@ const DocumentPanel = (props) => {
     const {title, text} = props;
 
     return (
-        <div className="documents-panel">
+        <div className="panel documents-panel">
             <Container>
                 <Row>
                     <Col sm={12} md={3} lg={3}>
