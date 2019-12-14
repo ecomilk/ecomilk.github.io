@@ -6,6 +6,12 @@
     padding: 4rem 0;
 }
 
+.footer .footer-content .logo {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 .footer .item {
     margin-top: 1.5rem;
 }

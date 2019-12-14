@@ -12,7 +12,7 @@ import {Col, Container, Row} from "react-bootstrap";
 
 const Footer = (props) => {
 
-    const {phone, mail} = props;
+    const {logo, phone, mail} = props;
 
     const columnItems = [
         {
@@ -100,7 +100,7 @@ const Footer = (props) => {
 
     const footerColumnElements = columnItems.map(column => (
         <Col key={`col-${column.id}`} sm={12} md={true} lg={true}>
-            <h4>{column.title}</h4>
+            <h5>{column.title}</h5>
             <div className="item-list">
                 {
                     column.items
@@ -113,6 +113,11 @@ const Footer = (props) => {
         <div className="footer">
             <div className="footer-content">
                 <Container>
+                    <Row>
+                        <Col>
+                            <div className="logo">{logo}</div>
+                        </Col>
+                    </Row>
                     <Row>
                         {
                             footerColumnElements

@@ -53,8 +53,9 @@ export default class App extends Component {
                     url={subscribeFormProps.url}
                 />
                 <Footer
-                    phone="+375291234567"
-                    mail="cheeser@gmail.com"
+                    logo={footerProps.logo}
+                    phone={footerProps.phone}
+                    mail={footerProps.mail}
                 />
             </div>
         )
@@ -117,19 +118,9 @@ const headerProps = {
 };
 
 const footerProps = {
-    phone: '',
-    mail: '',
-    socialLinksItems: [
-        {id: 'link-vk', href: 'https://vk.com', target: '_blank', img: ''},
-        {id: 'link-instagram', href: 'https://vk.com', target: '_blank', img: ''},
-        {id: 'link-telegram', href: 'https://vk.com', target: '_blank', img: ''},
-        {id: 'link-viber', href: 'https://vk.com', target: '_blank', img: ''},
-    ],
-
-    paymentMethodsItems: [
-        {id: 'payment-method-mastercard', img: ''},
-        {id: 'payment-method-visa', img: ''},
-    ]
+    logo: 'CHEESER',
+    phone: "+375291234567",
+    mail: "cheeser@gmail.com"
 };
 
 const documentPanelProps = {
