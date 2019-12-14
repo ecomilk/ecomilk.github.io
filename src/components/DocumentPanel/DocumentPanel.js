@@ -1,13 +1,13 @@
 import React from 'react'
 
-import './Documents.css'
+import './DocumentPanel.css'
 import doc from './doc_1.png'
 
 import {Col, Container, Row} from "react-bootstrap";
 
-const DocumentsPanel = (props) => {
+const DocumentPanel = (props) => {
 
-    const {title, text} = props[0];
+    const {title, text} = props;
 
     return (
         <div className="documents-panel">
@@ -29,4 +29,4 @@ const DocumentsPanel = (props) => {
     )
 };
 
-export default DocumentsPanel
+export default DocumentPanel

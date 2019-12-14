@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--color-yellow);
+}
+
+.footer .footer-content {
+    padding: 4rem 0;
+}
+
+.footer .item {
+    margin-top: 1.5rem;
+}
+
+.footer .icon {
+    display: inline-block;
+}
+
+.footer .icon img {
+    max-width: 2.25rem;
+    margin-right: .5rem;
+}
+
+.footer footer {
+    padding: 2rem 0;
+    color: white;
+    background-color: var(--color-dark);
+}
+
+.footer footer .row :first-child {
+    padding-bottom: 1rem;
+}
+

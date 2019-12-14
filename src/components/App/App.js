@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 
 import './App.css';
 
-import AppHeader from "../AppHeader/AppHeader";
+import Header from "../Header/Header";
 import AboutUsPanel from "../AboutUs";
 import ProductsPanel from "../Product/ProductsPanel/ProductsPanel";
-import DocumentsPanel from "../Documents/DocumentsPanel";
+import DocumentPanel from "../DocumentPanel/DocumentPanel";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
-import AppFooter from "../AppFooter/AppFooter";
+import Footer from "../Footer/Footer";
 import BenefitsPanel from "../Benefit/BenefitsPanel";
 
 import imgAboutUs from '../../assets/AboutUsPanel/about-us.png'
@@ -24,48 +24,10 @@ import milkImg from '../../assets/Products/ProductItem/milk.png'
 
 export default class App extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-
-            navListItems: [
-                {key: 'about-us', label: 'О Нас', target: '#about-us'},
-                {key: 'products', label: 'Продукция', target: '#products'},
-                {key: 'how-to-order', label: 'Как заказать', target: '#how-to-order'},
-                {key: 'blog', label: 'Блог', target: '#blog'},
-                {key: 'contacts', label: 'Контакты', target: '#contacts'},
-            ],
-
-            sections: [
-                {
-                    id: 4,
-                    name: 'documents',
-                    title: 'Документация и сертификаты качества',
-                    text: 'Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц? Непросто, местами очень сложно, но всегда полные веры в то, что мы движемся в правильном направлении. Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц?',
-                    images: [
-                        {id: 0, src: ''}
-                    ]
-                },
-                {
-                    id: 4,
-                    name: 'subscribeForm',
-                    url: 'api/subscribe'
-                }
-            ]
-        }
-    }
-
     render() {
-
-        const {sections} = this.state;
-
-        const documentsProps = sections.filter(it => it.name === 'documents');
-        const subscribeFormProps = sections.filter(it => it.name === 'subscribeForm');
-
         return (
             <div className="app">
-                <AppHeader
+                <Header
                     logo={headerProps.logo}
                     navLinkItems={headerProps.navLinkItems}
                 />
@@ -82,9 +44,18 @@ export default class App extends Component {
                     title={productsPanelProps.title}
                     productItems={productsPanelProps.productItems}
                 />
-                <DocumentsPanel {...documentsProps} />
-                <SubscribeForm {...subscribeFormProps} />
-                <AppFooter/>
+                <DocumentPanel
+                    title={documentPanelProps.title}
+                    text={documentPanelProps.text}
+                />
+                <SubscribeForm
+                    name={subscribeFormProps.name}
+                    url={subscribeFormProps.url}
+                />
+                <Footer
+                    phone="+375291234567"
+                    mail="cheeser@gmail.com"
+                />
             </div>
         )
     }
@@ -92,8 +63,8 @@ export default class App extends Component {
 
 const getProductItems = () => {
     return [
-        {id: 0, title: 'Яйца куриные С1', text: 'Состав: яйца, яйца, яйца', img: eggsImg},
-        {id: 1, title: 'Молоко домашнее', text: 'Состав: молоко натуральное', img: milkImg},
+        {id: 0, title: 'Яйца куриные С1', text: 'Состав: яйца куриные', img: eggsImg},
+        {id: 1, title: 'Молоко домашнее', text: 'Состав: молоко', img: milkImg},
         {id: 2, title: 'Мед пчелиный', text: 'Состав: мед, сахар', img: honeyImg},
         {id: 3, title: 'Сыр деревенский', text: 'Состав: сыр мягкий', img: cheeseImg}
     ]
@@ -110,8 +81,8 @@ const getBenefitItems = () => {
 
 const getNavLinkItems = () => {
     return [
-        {id: 'a-about-us', label: 'О нас', href: '#about-us'},
-        {id: 'a-products', label: 'Продукция', href: '#products'},
+        {id: 'a-about-us', label: 'О нас', href: '#about-us-panel'},
+        {id: 'a-products', label: 'Продукция', href: '#product-panel'},
         {id: 'a-how-to-purchase', label: 'Как заказать', href: '#how-to-purchase'},
         {id: 'a-blog', label: 'Блог', href: '#blog'},
         {id: 'a-contacts', label: 'Контакты', href: '#contacts'}
@@ -143,6 +114,34 @@ const productsPanelProps = {
 const headerProps = {
     logo: 'CHEESER',
     navLinkItems: getNavLinkItems()
+};
+
+const footerProps = {
+    phone: '',
+    mail: '',
+    socialLinksItems: [
+        {id: 'link-vk', href: 'https://vk.com', target: '_blank', img: ''},
+        {id: 'link-instagram', href: 'https://vk.com', target: '_blank', img: ''},
+        {id: 'link-telegram', href: 'https://vk.com', target: '_blank', img: ''},
+        {id: 'link-viber', href: 'https://vk.com', target: '_blank', img: ''},
+    ],
+
+    paymentMethodsItems: [
+        {id: 'payment-method-mastercard', img: ''},
+        {id: 'payment-method-visa', img: ''},
+    ]
+};
+
+const documentPanelProps = {
+    title: 'Документация и сертификаты качества',
+    text: 'Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц? ' +
+        'Непросто, местами очень сложно, но всегда полные веры в то, что мы движемся в правильном направлении. ' +
+        'Соответствующему всем европейским стандартам качества и производительностью 4 тонны сыра в месяц?',
+};
+
+const subscribeFormProps = {
+    name: 'subscribeForm',
+    url: 'api/subscribe'
 };
 
 

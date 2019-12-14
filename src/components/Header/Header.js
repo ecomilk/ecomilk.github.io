@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './AppHeader.css'
+import './Header.css'
 import Button from "../Button";
 import Line from "../Line";
 import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 
-const AppHeader = (props) => {
+const Header = (props) => {
 
     const {navLinkItems = [], logo = 'Logo'} = props;
 
@@ -66,4 +66,4 @@ const AppHeader = (props) => {
     )
 };
 
-export default AppHeader
+export default Header

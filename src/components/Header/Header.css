@@ -1,5 +1,5 @@
 .app-header {
-    background-image: url("./header-photo.png");
+    background-image: url("assets/header-photo.png");
     min-height: 100vh;
     color: var(--color-white);
     background-position: top;

@@ -62,3 +62,11 @@ input:focus {
     outline: 0 !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 221, 31, 0.5) !important;
 }
+
+.shadowOnHover {
+    transition-duration: var(--transition-duration-half) !important;
+}
+
+.shadowOnHover:hover {
+    box-shadow: var(--box-shadow);
+}
