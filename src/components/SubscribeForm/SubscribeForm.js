@@ -27,7 +27,7 @@ const SubscribeForm = (props) => {
                             <div className="row no-gutter justify-content-center mt-5">
                                 <div className="col-sm-12 col-md-6 mb-3 mb-lg-0">
                                     <label htmlFor="input-email" className="sr-only">Email</label>
-                                    <input type="email" className="form-control" id="input-email"
+                                    <input id="input-email" name="email" type="email" className="form-control"
                                            placeholder="Введите Вашу почту"/>
                                 </div>
                                 <div className="col-sm-12 col-md-3">
