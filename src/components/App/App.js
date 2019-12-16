@@ -44,6 +44,7 @@ export default class App extends Component {
             },
             subscribeForm: {
                 title: this.appService.getSubscribeFormTitle(),
+                text: this.appService.getSubscribeFormText(),
                 productItems: this.appService.getSubscribeFormText(),
                 url: this.appService.getSubscribeFormUrl()
             },
