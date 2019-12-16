@@ -6,6 +6,10 @@
     color: var(--color-dark-grey);
 }
 
+.about-us-container .image-container {
+    border-radius: .75rem;
+}
+
 .about-us-container .image-container img {
     max-height: 100%;
     max-width: 100%;

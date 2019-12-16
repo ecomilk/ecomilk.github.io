@@ -12,7 +12,7 @@ const AboutUsPanel = (props) => {
             <Container>
                 <Row className="about-us-container">
                     <Col sm={12} md={6} lg={6}>
-                        <div className="image-container">
+                        <div className="image-container shadowOnHover">
                             <img src={img} alt=""/>
                         </div>
                     </Col>
