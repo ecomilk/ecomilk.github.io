@@ -12,7 +12,7 @@ const AboutUsPanel = (props) => {
             <Container>
                 <Row className="about-us-container">
                     <Col sm={12} md={6} lg={6}>
-                        <div className="image">
+                        <div className="image-container">
                             <img src={img} alt=""/>
                         </div>
                     </Col>
@@ -21,12 +21,11 @@ const AboutUsPanel = (props) => {
                             <div className="title-container text-color-dark-grey">
                                 <h2>{title}</h2>
                             </div>
-                            <Line x2={'60%'}
-                            />
+                            <Line x2={'60%'}/>
                             <div>
-                                <span className="text-secondary">
+                                <div className="text-container">
                                     {text}
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </Col>

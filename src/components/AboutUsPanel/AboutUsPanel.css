@@ -1,10 +1,15 @@
 .about-us-panel {
-
 }
 
-.about-us-container .image img {
+.about-us-panel .text-container {
+    line-height: 1.8rem;
+    color: var(--color-dark-grey);
+}
+
+.about-us-container .image-container img {
     max-height: 100%;
     max-width: 100%;
+    border-radius: .75rem;
 }
 
 .about-us-container .content {
