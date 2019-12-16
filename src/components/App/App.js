@@ -40,6 +40,7 @@ export default class App extends Component {
             },
             documentPanel: {
                 title: this.appService.getDocumentPanelTitle(),
+                text: this.appService.getDocumentPanelText(),
                 productItems: this.appService.getDocumentPanelText()
             },
             subscribeForm: {
