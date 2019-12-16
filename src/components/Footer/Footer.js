@@ -111,7 +111,7 @@ const Footer = (props) => {
 
     return (
         <div className="footer">
-            <div className="footer-content">
+            <div className="footer-content panel panel-yellow">
                 <Container>
                     <Row>
                         <Col>
@@ -126,14 +126,16 @@ const Footer = (props) => {
                 </Container>
             </div>
             <footer>
-                <Container>
-                    <Row>
-                        <Col>
-                            <div>Частное фермерское хозяйство</div>
-                            <div>«Малочны маёнтак» © 2013-2020</div>
-                        </Col>
-                    </Row>
-                </Container>
+                <div>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div>Частное фермерское хозяйство</div>
+                                <div>«Малочны маёнтак» © 2013-2020</div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </footer>
         </div>
     );

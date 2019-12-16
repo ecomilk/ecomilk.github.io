@@ -86,6 +86,11 @@ input:focus {
     color: var(--color-dark-grey);
 }
 
+.panel-yellow {
+    background: var(--color-yellow);
+    color: var(--color-dark-grey);
+}
+
 .text-color-dark-grey {
     color: var(--color-dark-grey);
 }
