@@ -1,11 +1,14 @@
 .documents-panel {
 }
 
-.documents-panel img {
-    min-width: 100%;
-    margin-bottom: 1.5rem;
+.documents-panel .image-container {
+
 }
 
-.documents-panel p {
+.documents-panel .image-container img {
+    min-width: 50%;
+}
+
+.documents-panel .text-container {
     line-height: 1.8;
 }
