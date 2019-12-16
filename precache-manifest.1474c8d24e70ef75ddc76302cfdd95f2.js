@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "517553fbb635539c146320668e390c32",
+    "revision": "b97f4057f92612bb02a3e619c73ef96c",
     "url": "/cheeser/index.html"
   },
   {
@@ -8,24 +8,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cheeser/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "f053e7bdfb10b9a32f40",
-    "url": "/cheeser/static/css/main.28cbe9ef.chunk.css"
+    "revision": "04a1f1e07a5c977ae012",
+    "url": "/cheeser/static/css/main.9ed0f106.chunk.css"
   },
   {
     "revision": "dd455849d7be4d73ef62",
     "url": "/cheeser/static/js/2.02e986a4.chunk.js"
   },
   {
-    "revision": "f053e7bdfb10b9a32f40",
-    "url": "/cheeser/static/js/main.1ca8e051.chunk.js"
+    "revision": "04a1f1e07a5c977ae012",
+    "url": "/cheeser/static/js/main.a07db515.chunk.js"
   },
   {
     "revision": "984eb3f24298bd9348a5",
     "url": "/cheeser/static/js/runtime-main.57a6fa88.js"
   },
   {
-    "revision": "86073947f1759d75d358bffb4826a38f",
-    "url": "/cheeser/static/media/about-us.86073947.png"
+    "revision": "0040065161c441663de1ac0f86312aec",
+    "url": "/cheeser/static/media/4.00400651.jpg"
   },
   {
     "revision": "73ec0cea41814c85f8280d7487bd8efd",
