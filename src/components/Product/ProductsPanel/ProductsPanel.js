@@ -30,7 +30,9 @@ const ProductsPanel = (props) => {
                 <Row>
                     <Col sm={12} md={true} lg={true}>
                         <div className="products-container mb-sm-5">
-                            <h2>{title}</h2>
+                            <div className="title-container text-color-dark-grey">
+                                <h2>{title}</h2>
+                            </div>
                             <Row>
                                 <Col sm={12} md={3} lg={3}>
                                     <Line/>

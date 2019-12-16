@@ -18,15 +18,15 @@ const AboutUsPanel = (props) => {
                     </Col>
                     <Col sm={12} md={6} lg={6}>
                         <div className="content">
-                            <div>
+                            <div className="title-container text-color-dark-grey">
                                 <h2>{title}</h2>
                             </div>
                             <Line x2={'60%'}
                             />
                             <div>
-                                <p className="text-secondary">
+                                <span className="text-secondary">
                                     {text}
-                                </p>
+                                </span>
                             </div>
                         </div>
                     </Col>

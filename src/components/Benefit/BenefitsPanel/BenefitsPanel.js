@@ -23,7 +23,9 @@ const BenefitsPanel = (props) => {
         <Container>
             <Row className="justify-content-center">
                 <Col sm={12} md={true} lg={true}>
-                    <h2>{title}</h2>
+                    <div className="title-container text-color-dark-grey">
+                        <h2>{title}</h2>
+                    </div>
                     <Row>
                         <Col sm={10} md={3} lg={3}>
                             <Line/>

@@ -49,6 +49,8 @@ export default class App extends Component {
                     text={documentPanelProps.text}
                 />
                 <SubscribeForm
+                    title="Подписаться на рассылку"
+                    text="Подпишитесь, чтобы быть в курсе последних предложений и акций"
                     name={subscribeFormProps.name}
                     url={subscribeFormProps.url}
                 />

@@ -20,7 +20,9 @@ const DocumentPanel = (props) => {
                         <img src={doc} alt=""/>
                     </Col>
                     <Col sm={12} md={true} lg={true} className="order-first order-lg-last">
-                        <h2>{title}</h2>
+                        <div className="title-container text-color-dark-grey">
+                            <h2>{title}</h2>
+                        </div>
                         <p>{text}</p>
                     </Col>
                 </Row>
