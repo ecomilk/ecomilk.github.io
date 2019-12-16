@@ -1,12 +1,12 @@
 import React from 'react'
 
-import './ProductsPanel.css'
+import './ProductPanel.css'
 import Line from "../../Line";
 import Button from "../../Button";
 import ProductItem from "../ProductItem";
 import {Col, Container, Row} from "react-bootstrap";
 
-const ProductsPanel = (props) => {
+const ProductPanel = (props) => {
 
     const {title, productItems = []} = props;
 
@@ -25,7 +25,7 @@ const ProductsPanel = (props) => {
     ));
 
     return (
-        <div className="panel products-panel" id="products-panel">
+        <div className="panel product-panel panel-light-grey" id="products-panel">
             <Container>
                 <Row>
                     <Col sm={12} md={true} lg={true}>
@@ -58,4 +58,4 @@ const ProductsPanel = (props) => {
     )
 };
 
-export default ProductsPanel
+export default ProductPanel

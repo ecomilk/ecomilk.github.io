@@ -8,7 +8,7 @@ import Line from "../Line";
 const AboutUsPanel = (props) => {
     const {title, text, img} = props;
     return (
-        <div className="panel about-us-panel" id="about-us-panel">
+        <div className="panel panel-light-grey about-us-panel" id="about-us-panel">
             <Container>
                 <Row className="about-us-container">
                     <Col sm={12} md={6} lg={6}>

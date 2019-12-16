@@ -28,7 +28,7 @@
 .footer footer {
     padding: 2rem 0;
     color: white;
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-grey);
 }
 
 .footer footer .row :first-child {

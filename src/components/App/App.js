@@ -4,7 +4,7 @@ import './App.css';
 
 import Header from "../Header/Header";
 import AboutUsPanel from "../AboutUsPanel";
-import ProductsPanel from "../Product/ProductsPanel/ProductsPanel";
+import ProductPanel from "../Product/ProductPanel/ProductPanel";
 import DocumentPanel from "../DocumentPanel/DocumentPanel";
 import SubscribeForm from "../SubscribeForm/SubscribeForm";
 import Footer from "../Footer/Footer";
@@ -28,8 +28,8 @@ export default class App extends Component {
         return (
             <div className="app">
                 <Header
-                    logo={headerProps.logo}
-                    navLinkItems={headerProps.navLinkItems}
+                    logo={getLogo()}
+                    navLinkItems={getNavLinkItems()}
                 />
                 <AboutUsPanel
                     title={aboutUsProps.title}
@@ -40,9 +40,9 @@ export default class App extends Component {
                     title={benefitsPanelProps.title}
                     benefitItems={getBenefitItems()}
                 />
-                <ProductsPanel
-                    title={productsPanelProps.title}
-                    productItems={productsPanelProps.productItems}
+                <ProductPanel
+                    title={getProductPanelTitle()}
+                    productItems={getProductItems()}
                 />
                 <DocumentPanel
                     title={documentPanelProps.title}
@@ -114,9 +114,12 @@ const productsPanelProps = {
     productItems: getProductItems()
 };
 
-const headerProps = {
-    logo: 'CHEESER',
-    navLinkItems: getNavLinkItems()
+const getProductPanelTitle = () => {
+    return 'Популярная продукция'
+};
+
+const getLogo = () => {
+    return 'CHEESER'
 };
 
 const footerProps = {

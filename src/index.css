@@ -1,7 +1,8 @@
 :root {
     --color-white: #FFFFFF;
     --color-yellow: #FFDD1F;
-    --color-dark: #2B2B2B;
+    --color-light-grey: #F9F9F9;
+    --color-dark-grey: #2B2B2B;
     --box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.20);
     --transition-duration-half: .5s
 }
@@ -75,6 +76,16 @@ input:focus {
     padding: 6rem 0;
 }
 
+.panel-light-grey {
+    background: var(--color-light-grey);
+    color: var(--color-dark-grey);
+}
+
+.panel-white {
+    background: var(--color-white);
+    color: var(--color-dark-grey);
+}
+
 .text-color-dark-grey {
-    color: var(--color-dark);
+    color: var(--color-dark-grey);
 }
