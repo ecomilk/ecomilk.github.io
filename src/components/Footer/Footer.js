@@ -28,7 +28,7 @@ const Footer = (props) => {
                 },
                 {
                     id: 2, title: 'По любым вопросам', child: [
-                        {id: 1, value: mail, href: `tel:${mail}`}
+                        {id: 1, value: mail, href: `mailto:${mail}`}
                     ].map(item => (
                         <a key={`a-${item.id}`} href={item.href}>{item.value}</a>
                     ))
