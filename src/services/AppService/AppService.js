@@ -42,7 +42,7 @@ export default class AppService {
 
     getProductPanelTitle = () => 'Популярная продукция';
 
-    getLogo = () => 'CHEESER';
+    getLogo = () => 'ECOMILK';
 
     getAppPhone = () => '+375291234567';
 

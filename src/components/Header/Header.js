@@ -32,7 +32,7 @@ const Header = (props) => {
                 <Row className="row justify-content-md-center">
                     <Col sm={12} md={12} lg={12}>
                         <h1 className="tinos font-weight-bold">
-                            Малочны <br/> маёнтак
+                            Лiтоуская <br/> гаспадыня
                         </h1>
                     </Col>
                     <Col>
