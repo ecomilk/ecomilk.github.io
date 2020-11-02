@@ -1,5 +1,5 @@
 {
-  "name": "eco-milk",
+  "name": "ecomilk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,5 +33,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://glebremniov.github.io/eco-milk"
+  "homepage": "https://ecomilk.github.io/ecomilk/"
 }
