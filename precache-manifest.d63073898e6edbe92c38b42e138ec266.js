@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49c751dc92994a7cb8b96e93fbb3e52d",
+    "revision": "862195b8df8d29ae472b1f836c7dfc88",
     "url": "/eco-milk/index.html"
   },
   {
-    "revision": "02d3886d7143b835da5f",
+    "revision": "ce78fb89d934f579a043",
     "url": "/eco-milk/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "9bdb59ab148d37b91c4e",
+    "revision": "41594f532757a98e3905",
     "url": "/eco-milk/static/css/main.7831664f.chunk.css"
   },
   {
-    "revision": "02d3886d7143b835da5f",
-    "url": "/eco-milk/static/js/2.3edb7162.chunk.js"
+    "revision": "ce78fb89d934f579a043",
+    "url": "/eco-milk/static/js/2.14f2f92e.chunk.js"
   },
   {
     "revision": "8a137f586fcebb1a370343eb47b7677c",
-    "url": "/eco-milk/static/js/2.3edb7162.chunk.js.LICENSE.txt"
+    "url": "/eco-milk/static/js/2.14f2f92e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9bdb59ab148d37b91c4e",
-    "url": "/eco-milk/static/js/main.69086a56.chunk.js"
+    "revision": "41594f532757a98e3905",
+    "url": "/eco-milk/static/js/main.6d1a42cf.chunk.js"
   },
   {
     "revision": "16eef6e21a74655c512d",
@@ -30,6 +30,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0040065161c441663de1ac0f86312aec",
     "url": "/eco-milk/static/media/4.00400651.jpg"
+  },
+  {
+    "revision": "fd4858ec55561f6068894baaf2b542d1",
+    "url": "/eco-milk/static/media/Instagram_white.fd4858ec.svg"
+  },
+  {
+    "revision": "44255511fe1e6d06ea6e97080a612f66",
+    "url": "/eco-milk/static/media/Telegram_white.44255511.svg"
+  },
+  {
+    "revision": "f43f7cae7a22e8b5cbdacec53f6df530",
+    "url": "/eco-milk/static/media/Viber_white.f43f7cae.svg"
   },
   {
     "revision": "73ec0cea41814c85f8280d7487bd8efd",
@@ -44,24 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/eco-milk/static/media/color.09483883.svg"
   },
   {
-    "revision": "276a5e86b5064f7c19d554fedeff148b",
-    "url": "/eco-milk/static/media/color.276a5e86.svg"
-  },
-  {
     "revision": "6991d7c4c035592cfc9e406168f235a8",
     "url": "/eco-milk/static/media/color.6991d7c4.svg"
-  },
-  {
-    "revision": "dd8be139af45be38a5db7b31159a6e08",
-    "url": "/eco-milk/static/media/color.dd8be139.svg"
-  },
-  {
-    "revision": "e37c4df02b2e855212dce1c20d3868eb",
-    "url": "/eco-milk/static/media/color.e37c4df0.svg"
-  },
-  {
-    "revision": "ec166b8a9e9aef61c92f6e177565eeb8",
-    "url": "/eco-milk/static/media/color.ec166b8a.svg"
   },
   {
     "revision": "287f80601ca7aaa37db4e1a96a68049b",
