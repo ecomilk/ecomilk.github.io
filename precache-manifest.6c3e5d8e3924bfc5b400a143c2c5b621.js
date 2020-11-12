@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "083947d557065744bb6965b292dfa27a",
+    "revision": "55fa8ec0b02e8d9567e925deb5e4b929",
     "url": "/index.html"
   },
   {
-    "revision": "b39a248b44537f6cafa4",
+    "revision": "56203726f10a65474431",
     "url": "/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "e3cac3b2cada090a9ca0",
-    "url": "/static/css/main.84e8b61c.chunk.css"
+    "revision": "2eba5387d3e655605589",
+    "url": "/static/css/main.a5ee1b58.chunk.css"
   },
   {
-    "revision": "b39a248b44537f6cafa4",
-    "url": "/static/js/2.3805b500.chunk.js"
+    "revision": "56203726f10a65474431",
+    "url": "/static/js/2.dde3b10f.chunk.js"
   },
   {
     "revision": "8a137f586fcebb1a370343eb47b7677c",
-    "url": "/static/js/2.3805b500.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.dde3b10f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3cac3b2cada090a9ca0",
-    "url": "/static/js/main.7b40172f.chunk.js"
+    "revision": "2eba5387d3e655605589",
+    "url": "/static/js/main.cc3a8b80.chunk.js"
   },
   {
     "revision": "115de81931afa3e82d46",
@@ -32,24 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/4.00400651.jpg"
   },
   {
-    "revision": "fd4858ec55561f6068894baaf2b542d1",
-    "url": "/static/media/Instagram_white.fd4858ec.svg"
-  },
-  {
-    "revision": "44255511fe1e6d06ea6e97080a612f66",
-    "url": "/static/media/Telegram_white.44255511.svg"
-  },
-  {
-    "revision": "f43f7cae7a22e8b5cbdacec53f6df530",
-    "url": "/static/media/Viber_white.f43f7cae.svg"
-  },
-  {
     "revision": "73ec0cea41814c85f8280d7487bd8efd",
     "url": "/static/media/charity.73ec0cea.svg"
   },
   {
-    "revision": "ae1292c095363ef5b69e7c86a6b88e13",
-    "url": "/static/media/cheese.ae1292c0.png"
+    "revision": "8bb524c7015d3f3afc685d0a9f38ccfd",
+    "url": "/static/media/cheese_3.8bb524c7.jpg"
   },
   {
     "revision": "094838833de94fe2381adf95316c99fb",
@@ -72,23 +60,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ecology.dc738721.svg"
   },
   {
-    "revision": "ca8806389b3f18fd4b1dc9f3ca3d135e",
-    "url": "/static/media/eggs.ca880638.png"
+    "revision": "2ba48dd6d1fa5a1ff09e86f561e53f67",
+    "url": "/static/media/eggs_1.2ba48dd6.jpg"
   },
   {
     "revision": "c7ea3fdb3fdf118cec6f07036d3d9a90",
     "url": "/static/media/header-photo.c7ea3fdb.png"
   },
   {
-    "revision": "f4024b6c0150a4c32b3d27ee39f89ef1",
-    "url": "/static/media/honey.f4024b6c.png"
+    "revision": "2a5333dcaf9f7dcf07bb55ff01d98051",
+    "url": "/static/media/honey_1.2a5333dc.jpg"
   },
   {
-    "revision": "6c83dd2e5c80632e79fb24766642a264",
-    "url": "/static/media/milk.6c83dd2e.png"
+    "revision": "4fa3ba188e4298a4f0d40c033e3d42ca",
+    "url": "/static/media/instagram_colorful.4fa3ba18.svg"
+  },
+  {
+    "revision": "291d6308f9e3ba22b0ca84e585b2b443",
+    "url": "/static/media/milk_1.291d6308.jpg"
   },
   {
     "revision": "bc77c14d4362c417958b3d231b3fbb15",
     "url": "/static/media/plant.bc77c14d.svg"
+  },
+  {
+    "revision": "75558863e6b9308bdc9aef0d26dc68f0",
+    "url": "/static/media/telegram_colorful.75558863.svg"
+  },
+  {
+    "revision": "74f9907f30e1ac850b085961b503987a",
+    "url": "/static/media/viber_colorful.74f9907f.svg"
   }
 ]);
