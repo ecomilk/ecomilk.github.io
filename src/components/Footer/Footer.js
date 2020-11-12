@@ -2,9 +2,9 @@ import React from 'react'
 
 import './Footer.css'
 
-import instagramIcon from '../../assets/icons/white/Instagram_white.svg'
-import telegramIcon from '../../assets/icons/white/Telegram_white.svg'
-import viberIcon from '../../assets/icons/white/Viber_white.svg'
+import {ReactComponent as InstagramIcon} from '../../assets/icons/colorful/instagram_colorful.svg'
+import {ReactComponent as TelegramIcon} from '../../assets/icons/colorful/telegram_colorful.svg'
+import {ReactComponent as ViberIcon} from '../../assets/icons/colorful/viber_colorful.svg'
 import visaImg from './assets/Visa/color.svg'
 import masterCardImg from './assets/Mastercard/color.svg'
 import {Col, Container, Row} from "react-bootstrap";
@@ -17,6 +17,7 @@ const Footer = (props) => {
   const columnItems = [
     {
       id: 'footer-column-1',
+      domId: 'contacts',
       title: 'Контактная информация',
       items: [
         {
@@ -45,9 +46,9 @@ const Footer = (props) => {
         },
         {
           id: 4, title: 'Мы в соц.сетях:', child: [
-            {id: 0, value: {img: instagramIcon, alt: 'Instagram'}, href: instagram},
-            {id: 2, value: {img: viberIcon, alt: 'Viber'}, href: viber},
-            {id: 3, value: {img: telegramIcon, alt: 'Telegram'}, href: telegram},
+            {id: 0, Icon: InstagramIcon, href: instagram},
+            {id: 2, Icon: ViberIcon, href: viber},
+            {id: 3, Icon: TelegramIcon, href: telegram},
           ].map(item => (
             <div key={`div-${item.id}`} className="icon">
               <FooterSocialIcon {...item}/>
@@ -96,7 +97,7 @@ const Footer = (props) => {
   ];
 
   const footerColumnElements = columnItems.map(column => (
-    <Col key={`col-${column.id}`} sm={12} md={true} lg={true}>
+    <Col id={column.domId || ''} key={`col-${column.id}`} sm={12} md={true} lg={true}>
       <h5>{column.title}</h5>
       <div className="item-list">
         {
@@ -127,7 +128,7 @@ const Footer = (props) => {
           <Container>
             <Row>
               <Col>
-                <div>ЛПХ «Лiтоуская гаспадыня» © 2013-2020</div>
+                <div>ЛПХ «Лiтоуская гаспадыня» © 2015-2020</div>
               </Col>
             </Row>
           </Container>
@@ -139,10 +140,10 @@ const Footer = (props) => {
 
 export default Footer;
 
-const FooterSocialIcon = ({href, value: {img, alt}}) => {
+const FooterSocialIcon = ({href, Icon}) => {
   return (
     <a href={href}>
-      <img src={img} alt={alt}/>
+      <Icon className="svg-shadow"/>
     </a>
   )
 }
