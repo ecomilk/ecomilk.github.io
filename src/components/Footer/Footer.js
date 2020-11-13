@@ -142,7 +142,7 @@ export default Footer;
 
 const FooterSocialIcon = ({href, Icon}) => {
   return (
-    <a href={href}>
+    <a href={href} target="_blank">
       <Icon className="svg-shadow"/>
     </a>
   )
