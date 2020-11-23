@@ -2,17 +2,17 @@ import React from 'react'
 
 import './Footer.css'
 
-import {ReactComponent as InstagramIcon} from '../../assets/icons/colorful/instagram_colorful.svg'
-import {ReactComponent as TelegramIcon} from '../../assets/icons/colorful/telegram_colorful.svg'
-import {ReactComponent as ViberIcon} from '../../assets/icons/colorful/viber_colorful.svg'
+import { ReactComponent as InstagramIcon } from '../../assets/icons/colorful/instagram_colorful.svg'
+import { ReactComponent as TelegramIcon } from '../../assets/icons/colorful/telegram_colorful.svg'
+import { ReactComponent as ViberIcon } from '../../assets/icons/colorful/viber_colorful.svg'
 import visaImg from './assets/Visa/color.svg'
 import masterCardImg from './assets/Mastercard/color.svg'
-import {Col, Container, Row} from "react-bootstrap";
-import {instagram, telegram, viber} from '../../config/external-links'
+import { Col, Container, Row } from "react-bootstrap";
+import { instagram, telegram, viber } from '../../config/external-links'
 
 const Footer = (props) => {
 
-  const {logo, phone, mail} = props;
+  const { logo, phones, mail } = props;
 
   const columnItems = [
     {
@@ -21,37 +21,47 @@ const Footer = (props) => {
       title: 'Контактная информация',
       items: [
         {
-          id: 1, title: 'По вопросам заказа', child: [
-            {id: 1, value: phone, href: `tel:${phone}`}
-          ].map(item => (
-            <a key={`a-${item.id}`} href={item.href}>{item.value}</a>
-          ))
-        },
-        {
-          id: 2, title: 'По любым вопросам', child: [
-            {id: 1, value: mail, href: `mailto:${mail}`}
-          ].map(item => (
-            <a key={`a-${item.id}`} href={item.href}>{item.value}</a>
-          ))
-        },
-        {
-          id: 3, title: 'Мы принимаем к оплате', child: [
-            {id: 1, value: {img: visaImg, alt: 'Visa'}},
-            {id: 2, value: {img: masterCardImg, alt: 'MasterCard'}}
-          ].map(item => (
-            <div key={`div-${item.id}`} className="icon">
-              <img src={item.value.img} alt={item.value.alt}/>
+          id: 1,
+          title: 'По вопросам заказа',
+          child: phones.map(({ id, href, label }) => (
+            <div className="phone-link">
+              <a key={`phone-${id}`} href={href}>{label}</a>
             </div>
           ))
         },
         {
-          id: 4, title: 'Мы в соц.сетях:', child: [
-            {id: 0, Icon: InstagramIcon, href: instagram},
-            {id: 2, Icon: ViberIcon, href: viber},
-            {id: 3, Icon: TelegramIcon, href: telegram},
+          id: 2,
+          title: 'По любым вопросам',
+          child: [
+            { id: 1, value: mail, href: `mailto:${mail}` }
+          ].map(item => (
+            <div className="email-link">
+              <a key={`a-${item.id}`} href={item.href}>{item.value}</a>
+            </div>
+          ))
+        },
+        {
+          id: 3,
+          title: 'Мы принимаем к оплате',
+          child: [
+            { id: 1, value: { img: visaImg, alt: 'Visa' } },
+            { id: 2, value: { img: masterCardImg, alt: 'MasterCard' } }
           ].map(item => (
             <div key={`div-${item.id}`} className="icon">
-              <FooterSocialIcon {...item}/>
+              <img src={item.value.img} alt={item.value.alt} />
+            </div>
+          ))
+        },
+        {
+          id: 4,
+          title: 'Мы в соц.сетях:',
+          child: [
+            { id: 0, Icon: InstagramIcon, href: instagram },
+            { id: 2, Icon: ViberIcon, href: viber },
+            { id: 3, Icon: TelegramIcon, href: telegram },
+          ].map(item => (
+            <div key={`div-${item.id}`} className="icon">
+              <FooterSocialIcon {...item} />
             </div>
           ))
         },
@@ -70,11 +80,11 @@ const Footer = (props) => {
       id: 'footer-column-2',
       title: 'О ферме',
       items: [
-        {id: 1, value: 'Продукция', href: '#products'},
-        {id: 2, value: 'О нас', href: 'about-us'},
-        {id: 3, value: 'Блог', href: '/blog'},
-        {id: 4, value: 'Контакты', href: '/contacts'},
-        {id: 5, value: 'Обратная связь', href: '#subscribe-form'},
+        { id: 1, value: 'Продукция', href: '#products' },
+        { id: 2, value: 'О нас', href: 'about-us' },
+        { id: 3, value: 'Блог', href: '/blog' },
+        { id: 4, value: 'Контакты', href: '/contacts' },
+        { id: 5, value: 'Обратная связь', href: '#subscribe-form' },
       ].map(item => (
         <div key={`div-${item.id}`} className="item">
           <a href={item.href}>{item.value}</a>
@@ -85,9 +95,9 @@ const Footer = (props) => {
       id: 'footer-column-3',
       title: 'Покупателям',
       items: [
-        {id: 1, value: 'Как сделать заказ', href: '/faq#how-to-order'},
-        {id: 2, value: 'Сертификаты качества', href: '/faq#certificates'},
-        {id: 3, value: 'Акции и предложения', href: '/faq#sales'},
+        { id: 1, value: 'Как сделать заказ', href: '/faq#how-to-order' },
+        { id: 2, value: 'Сертификаты качества', href: '/faq#certificates' },
+        { id: 3, value: 'Акции и предложения', href: '/faq#sales' },
       ].map(item => (
         <div key={`div-${item.id}`} className="item">
           <a href={item.href}>{item.value}</a>
@@ -140,10 +150,12 @@ const Footer = (props) => {
 
 export default Footer;
 
-const FooterSocialIcon = ({href, Icon}) => {
+const FooterSocialIcon = ({ href, Icon }) => {
   return (
-    <a href={href} target="_blank">
-      <Icon className="svg-shadow"/>
+    <a href={href}
+      rel="noopener noreferrer"
+      target="_blank">
+      <Icon className="svg-shadow" />
     </a>
   )
 }

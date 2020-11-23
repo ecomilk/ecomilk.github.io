@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
 
@@ -52,47 +52,37 @@ export default class App extends Component {
             footer: {
                 logo: this.appService.getLogo(),
                 mail: this.appService.getAppMail(),
-                phone: this.appService.getAppPhone(),
+                phones: this.appService.getAppPhones(),
             }
         }
 
     }
 
     render() {
-        const {header, aboutUsPanel, benefitPanel, productPanel, documentPanel, subscribeForm, footer} = this.state;
+        const { header, aboutUsPanel, benefitPanel, productPanel, documentPanel, subscribeForm, footer } = this.state;
 
         return (
             <div className="app">
                 <Header
-                    logo={header.logo}
-                    navLinkItems={header.navLinkItems}
+                    {...header}
                 />
                 <AboutUsPanel
-                    title={aboutUsPanel.title}
-                    text={aboutUsPanel.text}
-                    img={aboutUsPanel.img}
+                    {...aboutUsPanel}
                 />
                 <BenefitsPanel
-                    title={benefitPanel.title}
-                    benefitItems={benefitPanel.benefitItems}
+                    {...benefitPanel}
                 />
                 <ProductPanel
-                    title={productPanel.title}
-                    productItems={productPanel.productItems}
+                    {...productPanel}
                 />
                 <DocumentPanel
-                    title={documentPanel.title}
-                    text={documentPanel.text}
+                    {...documentPanel}
                 />
                 <SubscribeForm
-                    title={subscribeForm.title}
-                    text={subscribeForm.text}
-                    url={subscribeForm.url}
+                    {...subscribeForm}
                 />
                 <Footer
-                    logo={footer.logo}
-                    phone={footer.phone}
-                    mail={footer.mail}
+                    {...footer}
                 />
             </div>
         )

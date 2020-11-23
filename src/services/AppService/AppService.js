@@ -12,27 +12,27 @@ import imgAboutUs from "../../assets/AboutUsPanel/4.jpg";
 export default class AppService {
 
   getProductItems = () => [
-    {id: 0, title: 'Яйца куриные С1', text: 'Состав: яйца куриные', img: eggsImg},
-    {id: 1, title: 'Молоко домашнее', text: 'Состав: молоко', img: milkImg},
-    {id: 2, title: 'Мед пчелиный', text: 'Состав: мед, сахар', img: honeyImg},
-    {id: 3, title: 'Сыр деревенский', text: 'Состав: сыр мягкий', img: cheeseImg}
+    { id: 0, title: 'Яйца куриные С1', text: 'Состав: яйца куриные', img: eggsImg },
+    { id: 1, title: 'Молоко домашнее', text: 'Состав: молоко', img: milkImg },
+    { id: 2, title: 'Мед пчелиный', text: 'Состав: мед, сахар', img: honeyImg },
+    { id: 3, title: 'Сыр деревенский', text: 'Состав: сыр мягкий', img: cheeseImg }
   ];
 
   getBenefitPanelTitle = () => 'Наши преимущества';
 
   getBenefitItems = () => [
-    {id: 0, title: 'Только свежие продукты', img: cowHeadSvg},
-    {id: 1, title: 'Без ГМО', img: ecologySvg},
-    {id: 2, title: 'Сертификаты качества', img: plantSvg},
-    {id: 3, title: 'Сделано с любовью', img: charitySvg},
+    { id: 0, title: 'Только свежие продукты', img: cowHeadSvg },
+    { id: 1, title: 'Без ГМО', img: ecologySvg },
+    { id: 2, title: 'Сертификаты качества', img: plantSvg },
+    { id: 3, title: 'Сделано с любовью', img: charitySvg },
   ];
 
   getNavLinkItems = () => [
-    {id: 'a-about-us', label: 'О нас', href: '#about-us-panel'},
-    {id: 'a-products', label: 'Продукция', href: '#product-panel'},
-    {id: 'a-how-to-purchase', label: 'Как заказать', href: '#how-to-purchase'},
-    {id: 'a-blog', label: 'Блог', href: '#blog'},
-    {id: 'a-contacts', label: 'Контакты', href: '#contacts'}
+    { id: 'a-about-us', label: 'О нас', href: '#about-us-panel' },
+    { id: 'a-products', label: 'Продукция', href: '#products-panel' },
+    { id: 'a-how-to-purchase', label: 'Как заказать', href: '#how-to-purchase' },
+    { id: 'a-blog', label: 'Блог', href: '#blog' },
+    { id: 'a-contacts', label: 'Контакты', href: '#contacts' }
   ];
 
   getAboutUsPanelTitle = () => 'Кто мы такие?';
@@ -78,7 +78,19 @@ export default class AppService {
 
   getLogo = () => 'ECOMILK';
 
-  getAppPhone = () => '+375291234567';
+  getAppPhones = () => [
+    {
+      id: 1,
+      label: '+375(29)613-01-98',
+      href: 'tel:+375296130198'
+    },
+    {
+      id: 1,
+      label: '+375(25)609-03-53 (Viber)',
+      href: 'tel:+375256090353'
+    },
+    '+'
+  ];
 
   getAppMail = () => 'saspet.75@tut.by';
 
