@@ -81,15 +81,14 @@ export default class AppService {
   getAppPhones = () => [
     {
       id: 1,
-      label: '+375(29)613-01-98',
+      label: '+375 (29) 613-01-98',
       href: 'tel:+375296130198'
     },
     {
-      id: 1,
-      label: '+375(25)609-03-53 (Viber)',
+      id: 2,
+      label: '+375 (25) 609-03-53 (Viber)',
       href: 'tel:+375256090353'
     },
-    '+'
   ];
 
   getAppMail = () => 'saspet.75@tut.by';

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './DocumentPanel.css'
-import doc from './doc_1.png'
 
 import { Col, Container, Row } from "react-bootstrap";
 

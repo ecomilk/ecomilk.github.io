@@ -34,15 +34,7 @@
     background-color: var(--color-dark-grey);
 }
 
-.footer .phone-link {
-    font-weight: 600;
-}
-
 .footer .phone-link:first-child {
     margin-bottom: .25rem;
-}
-
-.footer .email-link {
-    font-weight: 600;
 }
 
