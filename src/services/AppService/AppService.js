@@ -7,7 +7,7 @@ import cowHeadSvg from "../../assets/Benefit/BenefitItem/cow-head.svg";
 import ecologySvg from "../../assets/Benefit/BenefitItem/ecology.svg";
 import plantSvg from "../../assets/Benefit/BenefitItem/plant.svg";
 import charitySvg from "../../assets/Benefit/BenefitItem/charity.svg";
-import imgAboutUs from "../../assets/AboutUsPanel/4.jpg";
+import imgAboutUs from "../../assets/AboutUsPanel/1_1.JPG";
 
 export default class AppService {
 
